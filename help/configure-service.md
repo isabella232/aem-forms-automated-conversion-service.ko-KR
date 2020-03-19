@@ -1,13 +1,13 @@
 ---
-title: 자동화된 양식 변환 서비스 구성
+title: 자동 양식 전환 서비스 구성
 description: AEM 인스턴스에서 자동화된 양식 전환 서비스를 사용할 수 있도록 준비
 translation-type: tm+mt
-source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
-# 자동화된 양식 변환 서비스 구성 {#about-this-help}
+# 자동 양식 전환 서비스 구성 {#about-this-help}
 
 이 도움말은 AEM 관리자가 PDF 양식을 적응형 양식으로 자동 변환하도록 자동화된 양식 변환 서비스를 구성하는 방법에 대해 설명합니다. 이 도움말은 조직의 IT 및 AEM 관리자를 위한 것입니다. 제공된 정보는 이 도움말을 읽는 사람이 다음 기술에 익숙하다는 가정을 기반으로 합니다.
 
@@ -23,9 +23,9 @@ source-git-commit: ef5789dabccc65dcf988b9424b435aa036017691
 
 ## 온보딩{#onboarding}
 
-이 서비스는 AEM 6.5 Forms 및 AEM 6.4 Forms 온프레미스 고객 및 Adobe Managed Service 엔터프라이즈 고객에게 무료로 제공됩니다. Adobe 세일즈 팀 또는 Adobe 담당자에게 문의하여 서비스에 대한 액세스 권한을 요청할 수 있습니다.
+이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms 온프레미스 고객 및 Adobe Managed Service 엔터프라이즈 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스 권한을 요청할 수 있습니다.
 
-Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 관리자로 지정된 사람에게 필요한 권한을 제공합니다. 관리자는 해당 서비스에 연결할 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
+Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 책임자는 해당 서비스에 연결할 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다.
 
 ## 전제 조건 {#prerequisites}
 
@@ -33,32 +33,32 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 관리�
 
 * 조직에서 자동 양식 변환 서비스를 사용할 수 있습니다.
 * 전환 서비스에 대한 관리자 권한이 있는 Adobe ID 계정
-* 최신 AEM 서비스 팩이 포함된 AEM 6.5 또는 AEM 6.4 작성자 인스턴스 실행
+* 최신 AEM 서비스 팩이 포함된 AEM 6.4 또는 AEM 6.5 작성자 인스턴스 실행
 * AEM 인스턴스에서 양식-사용자 그룹의 멤버인 AEM 사용자
 
 ## 환경 설정 {#setuptheservice}
 
 서비스를 사용하기 전에 Adobe Cloud에서 실행 중인 서비스에 연결할 AEM 작성자 인스턴스를 준비하십시오. 나열된 시퀀스에서 다음 단계를 수행하여 서비스에 대한 인스턴스를 준비합니다.
 
-1. [AEM 6.5 또는 AEM 6.4 다운로드 및 설치](#aemquickstart)
+1. [AEM 6.4 또는 AEM 6.5 다운로드 및 설치](#aemquickstart)
 1. [최신 AEM 서비스 팩 다운로드 및 설치](#servicepack)
 1. [최신 AEM Forms 추가 기능 패키지 다운로드 및 설치](#downloadaemformsaddon)
 1. [사용자 정의 테마 및 템플릿 만들기](#referencepackage)
 
-### AEM 6.5 또는 AEM 6.4 다운로드 및 설치 {#aemquickstart}
+### AEM 6.4 또는 AEM 6.5 다운로드 및 설치 {#aemquickstart}
 
 
-자동화된 양식 전환 서비스는 AEM 작성자 인스턴스에서 실행됩니다. AEM 작성자 인스턴스를 설정하려면 AEM 6.5 또는 AEM 6.4가 필요합니다. AEM을 설치하여 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
+자동화된 양식 전환 서비스는 AEM 작성자 인스턴스에서 실행됩니다. AEM 작성자 인스턴스를 설정하려면 AEM 6.4 또는 AEM 6.5가 필요합니다. AEM을 설치하여 실행하지 않은 경우 다음 위치에서 다운로드하십시오.
 
-* 기존 AEM 고객의 경우 Adobe 라이센스 웹 사이트에서 AEM 6.5 또는 AEM 6.4 [를](http://licensing.adobe.com)다운로드하십시오.
+* 기존 AEM 고객의 경우 Adobe 라이센스 웹 사이트에서 AEM 6.4 또는 AEM 6.5 [를](http://licensing.adobe.com)다운로드하십시오.
 
-* Adobe 파트너인 경우 Adobe 파트너 교육 [프로그램을 사용하여 AEM](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) 6.5 또는 AEM 6.4를 요청하십시오.
+* Adobe 파트너인 경우 Adobe 파트너 교육 [프로그램을 사용하여 AEM](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) 6.4 또는 AEM 6.5를 요청하십시오.
 
 AEM을 다운로드한 후 AEM 작성자 인스턴스 설정에 대한 지침은 [배포 및 유지 관리를](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall)참조하십시오.
 
 ### AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-최신 AEM 서비스 팩을 다운로드하여 설치합니다. 자세한 지침은 AEM 6. [5 서비스 팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html) 또는 AEM 6. [4 서비스 팩 릴리스 노트를 참조하십시오](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html).
+최신 AEM 서비스 팩을 다운로드하여 설치합니다. 자세한 지침은 AEM 6.4 서비스 [팩 릴리스 노트](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 또는 AEM 6.5 [서비스 팩 릴리스 노트를 참조하십시오](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### AEM Forms 추가 기능 패키지 다운로드 및 설치 {#downloadaemformsaddon}
 
@@ -189,7 +189,7 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
 
    ![API 키, 클라이언트 암호 및 통합의 페이로드 정보](assets/integration-details.png)
 
-1. 로컬 인스턴스에서 IMS 구성 페이지를 엽니다. 페이지 열기 부분은 Obtain public certificate [](#obtainpubliccertificates).
+1. 로컬 인스턴스에서 IMS 구성 페이지를 엽니다. Obtain public certificate [](#obtainpubliccertificates)섹션의 끝에 페이지를 열어 두었습니다.
 
    ![제목, API 키, 클라이언트 암호 및 페이로드 지정 ](assets/ims-configuration-details.png)
 
@@ -265,4 +265,4 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
       }
    ```
 
-1. 탭하기 **[!UICONTROL Create]**.  클라우드 구성이 생성됩니다. AEM Forms 인스턴스가 기존 양식을 적응형 양식으로 변환할 준비가 되었습니다.
+1. 탭하기 **[!UICONTROL Create]**. 클라우드 구성이 생성됩니다. AEM Forms 인스턴스가 기존 양식을 적응형 양식으로 변환할 준비가 되었습니다.
