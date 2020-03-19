@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -26,10 +26,11 @@ source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
 
 ## 전제 조건 {#pre-requisites}
 
-* 최신 AEM 6.5 서비스 팩이 포함된 AEM 6.5 작성자 인스턴스
+* AEM 6.4 또는 6.5 작성자 인스턴스 설정
+* AEM 인스턴스용 [최신 서비스 팩](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) 설치
 * 최신 버전의 AEM Forms 추가 기능 패키지
-* [자동화된 양식 변환 서비스](configure-service.md)
-* 통합할 데이터베이스입니다. 샘플 구현에서 사용되는 데이터베이스는 MySQL 5.6.24입니다.그러나 원하는 데이터베이스와 Forms 포털을 통합할 수 있습니다.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* 데이터베이스를 설정합니다. 샘플 구현에서 사용되는 데이터베이스는 MySQL 5.6.24입니다.그러나 변환된 적응형 양식을 원하는 데이터베이스와 통합할 수 있습니다.
 
 ## AEM 인스턴스와 데이터베이스 간 연결 설정 {#set-up-connection-aem-instance-database}
 
@@ -284,7 +285,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간의 연결을 만들려면 다�
 
 ## Forms 포털 페이지 만들기 및 구성 {#create-configure-forms-portal-page}
 
-다음 단계를 수행하여 Forms 포털 페이지를 만들고 이 페이지를 사용하여 적응형 양식을 제출할 수 있도록 구성합니다.
+다음 단계에 따라 양식 포털 페이지를 만들고 이 페이지를 사용하여 적응형 양식을 제출할 수 있도록 구성합니다.
 
 1. AEM 작성자 인스턴스에 로그온하고 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Sites]**&#x200B;을 누릅니다.
 1. 새 Forms 포털 페이지를 저장할 위치를 선택하고 **[!UICONTROL Create]** > **[!UICONTROL Page]**&#x200B;을 누릅니다.
