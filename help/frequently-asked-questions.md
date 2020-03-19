@@ -7,15 +7,15 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
+source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
 
 
-# Frequently asked questions{#frequently-asked-questions}
+# FAQ{#frequently-asked-questions}
 
 1. **자동화된 양식 전환 서비스가 지원하는 AEM Forms 버전은 무엇입니까?**
-   <p>자동화된 양식 전환 서비스는 AEM 6.5 양식을 지원합니다. OSGi의 AEM Forms 및 JEE의 AEM Forms와 함께 작동합니다. 서비스를 사용하려면 AEM 작성자 인스턴스 상단에 최신 AEM Forms 추가 기능 패키지가 필요합니다. 자세한 지침은 자동화된 <a href="configure-service.md">양식 변환 서비스 구성을 참조하십시오</a> .</p> 
+   <p>자동화된 양식 전환 서비스는 AEM 6.4 양식 및 AEM 6.5 양식을 지원합니다. OSGi의 AEM Forms 및 JEE의 AEM Forms와 함께 작동합니다. 서비스를 사용하려면 AEM 작성자 인스턴스 상단에 최신 AEM Forms 추가 기능 패키지가 필요합니다. 자세한 지침은 자동화된 <a href="configure-service.md">양식 변환 서비스 구성을 참조하십시오</a> .</p> 
     <br>
 
 1. **서비스를 온프레미스 서비스에 설치할 수 있습니까?**
@@ -26,7 +26,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
    <p>이 서비스는 비대화형 PDF 양식, XFA 기반 XDP 및 PDF 양식, AcroForms를 적응형 양식으로 변환할 수 있습니다. 서비스가 스캔하거나 작성한 양식을 지원하지 않습니다. 다른 제한 사항은 <a href="known-issues.md">알려진 문제</a> 문서를 참조하십시오.<br /> </p> 
     <p>다른 소스 유형에 대한 지원을 정기적으로 추가하고 있습니다. 감시 목록에 <a href="introduction.md">지원되는 PDF 양식</a> 섹션을 유지하여 새롭게 추가된 기능과 기능을 정기적으로 업데이트할 수 있습니다.</p>
 
-   이 서비스는 영어 양식만 응용 양식으로 변환할 수 있습니다. AEM 번역 워크플로우를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 [수 있습니다.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   이 서비스는 영어 양식만 적응형 양식으로 전환할 수 있습니다. You can translate the generated adaptive forms to another language using [AEM translation workflow.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **서비스가 적응형 양식 대신 XDP를 생성할 수 있습니까?**
    <p>서비스는 XDP 출력을 생성하지 않습니다. 정기적으로 기능 및 서비스를 추가하고 있습니다. 새롭게 추가된 기능과 기능을 정기적으로 업데이트하려면 <a href="introduction.md">지원되는 언어와 PDF 양식</a> 섹션을 주의 목록에 두십시오.</p> <br>
@@ -97,7 +97,7 @@ source-git-commit: 1e22587a832ca8d09f33141a9ba4e4b1748e0312
 1. **자산(테마, 템플릿)을 만들고 적응형 양식을 만들고 게시하는 수동 프로세스와 비교하여 서비스가 얼마나 많은 시간을 절약합니까?**
    <p>시간은 입력 양식의 크기, 복잡성 및 요청 수에 따라 다릅니다. PDF 양식을 적응형 양식으로 변환하여 양식 변환의 수동 프로세스와 비교해 본 서비스를 통해 가치 창출 시간을 크게 단축할 수 있습니다. </p> <br />
 
-1. **RSA 라이브러리와 관련된 오류가 발생하면 어떻게 해야 합니까?** 오류 메시지는 아래에 언급된 메시지와 유사합니다. <br/>
+1. **RSA 라이브러리와 관련된 오류가 발생하면 어떻게 해야 합니까? 오류 메시지는 아래에 언급된 메시지와 유사합니다.** <br/>
    `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` 앞서 <br>언급한 오류는 부트 위임이 RSA/BouncyCastle 라이브러리에 대해 구성되지 않은 경우 발생합니다. 아래 단계를 수행하여 문제를 해결하십시오.
    <p> </p>
 
