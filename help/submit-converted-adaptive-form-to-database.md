@@ -5,12 +5,12 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
-# AEM 워크플로우를 사용하여 적응형 양식 통합 {#submit-forms-to-database-using-forms-portal}
+# AEM 워크플로우를 사용하여 적응형 양식과 데이터베이스 통합 {#submit-forms-to-database-using-forms-portal}
 
 자동화된 양식 변환 서비스를 사용하면 비대화형 PDF 양식, Acro Form 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
 
@@ -24,10 +24,11 @@ source-git-commit: b879a0ddecd5370c754dfe9e1bf33121dd5ecc97
 
 ## 전제 조건 {#pre-requisites}
 
-* 최신 AEM 6.5 서비스 팩이 포함된 AEM 6.5 작성자 인스턴스
+* AEM 6.4 또는 6.5 작성자 인스턴스 설정
+* AEM 인스턴스용 [최신 서비스 팩](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) 설치
 * 최신 버전의 AEM Forms 추가 기능 패키지
-* [자동화된 양식 변환 서비스](configure-service.md)
-* 통합할 데이터베이스입니다. 샘플 구현에서 사용되는 데이터베이스는 MySQL 5.6.24입니다.그러나 변환된 적응형 양식을 원하는 데이터베이스와 통합할 수 있습니다.
+* Configure [Automated Forms Conversion service](configure-service.md)
+* 데이터베이스를 설정합니다. 샘플 구현에서 사용되는 데이터베이스는 MySQL 5.6.24입니다.그러나 변환된 적응형 양식을 원하는 데이터베이스와 통합할 수 있습니다.
 
 ## 샘플 적응형 양식 {#sample-adaptive-form}
 
