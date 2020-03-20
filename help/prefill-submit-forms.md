@@ -1,5 +1,5 @@
 ---
-title: 적응형 양식을 위한 권장 데이터 소스 기반 자동 채우기 및 제출 워크플로우
+title: 적응형 양식을 위한 권장 데이터 소스 기반 미리 채우기 및 제출 워크플로우
 seo-title: 적응형 양식의 자동 채우기 및 제출 옵션
 description: Automated Forms Conversion Service를 사용하여 생성된 적응형 양식의 데이터 소스 기반 자동 채우기 및 제출 워크플로우
 seo-description: Automated Forms Conversion Service를 사용하여 생성된 적응형 양식의 데이터 소스 기반 자동 채우기 및 제출 워크플로우
@@ -9,12 +9,12 @@ topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 translation-type: tm+mt
-source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
+source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
 
-# 적응형 양식을 위한 권장 데이터 소스 기반 자동 채우기 및 제출 워크플로우 {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
+# 적응형 양식을 위한 권장 데이터 소스 기반 미리 채우기 및 제출 워크플로우 {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
 자동 양식 변환 서비스를 사용하여 전환된 적응형 양식과 함께 다음 데이터 소스를 사용할 수 있습니다.
 
@@ -91,10 +91,10 @@ source-git-commit: f598871fd41c402f98d94d7b2174ab8b2e487075
 
 자동화된 양식 변환 서비스에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [자동화된 양식 변환 서비스 소개](introduction.md)
-* [자동화된 양식 변환 서비스 구성](configure-service.md)
-* [인쇄 양식을 적응형 양식으로 변환](convert-existing-forms-to-adaptive-forms.md)
-* [변환된 양식 검토 및 수정](review-correct-ui-edited.md)
+* [자동 양식 전환 서비스 소개](introduction.md)
+* [자동 양식 전환 서비스 구성](configure-service.md)
+* [인쇄 양식을 적응형 양식으로 전환](convert-existing-forms-to-adaptive-forms.md)
+* [전환된 양식 검토 및 수정](review-correct-ui-edited.md)
 
 이 문서에서 제공되는 정보는 읽으면 적응형 양식 개념에 대한 기본적인 지식이 있다는 가정을 바탕으로 합니다.
 
@@ -268,17 +268,17 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
    1. 섹션의 **[!UICONTROL Submission]** 드롭다운 목록에서 **[!UICONTROL Submit using Form Data Model]** **[!UICONTROL Submit Action]** 선택합니다.
 
    1. 필드를 사용하여 데이터 모델을 **[!UICONTROL Data Model to submit]** 선택합니다.
-   1. 완료 아이콘을 ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 눌러 속성을 저장합니다.
+   1. 완료 아이콘을 ![](assets/save_icon.svg) 눌러 속성을 저장합니다.
 
-1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (구성)을 선택합니다.
+1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg) (구성)을 선택합니다.
 
-   1. 참조 바인드 필드에서 신청자 **>** 이름을 **선택한**&#x200B;다음 ![완료 아이콘을](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 탭하여 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. 의 종속 패밀리 멤버** 필드(양식 데이터 모델 엔티티 포함)를 참조하십시오.
+   1. 참조 바인드 필드에서 신청자 **>** 이름을 **선택한**&#x200B;다음 ![완료 아이콘을](assets/save_icon.svg) 탭하여 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. 의 종속 패밀리 멤버** 필드(양식 데이터 모델 엔티티 포함)를 참조하십시오.
    ![참조 바인딩](assets/bind_references.png)
 
 1. 자동 입력 적응형 양식 필드 값을 **[!UICONTROL Preview]** 보려면 을 누릅니다.
 1. 필요한 경우 필드 값을 수정하고 적응형 양식을 제출합니다. 필드 값이 MySQL 데이터베이스에 제출됩니다. 데이터베이스의 **신청자** 테이블을 새로 고쳐 테이블에서 업데이트된 값을 볼 수 있습니다.
 
-**** 사용 사례:자동 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
+**사용 사례:** 자동 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
 
 다음 단계를 수행하여 [규칙 편집기를](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) 사용하여 양식 데이터 모델 서비스를 호출하여 적응형 양식의 필드를 바인딩하고 값을 미리 채웁니다.
 
@@ -319,7 +319,7 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
 
 ### 데이터 소스로 JSON 스키마 사용 {#jsondatasource}
 
-**** 사용 사례:자동화된 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 데이터 **** 포함 미리 보기 옵션을 사용하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
+**사용 사례:** 자동화된 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 데이터 **** 포함 미리 보기 옵션을 사용하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
 
 사용 사례를 실행하기 전에 다음을 보유했는지 확인하십시오.
 
@@ -331,9 +331,9 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
 1. 변환된 **샘플 대출 신청 양식을** **출력** 폴더에서 선택한 다음 을 **[!UICONTROL Properties]**&#x200B;누릅니다.
 1. 탭을 누르고 **[!UICONTROL Form Model]** 드롭다운 **[!UICONTROL Schema]** 목록에서 **[!UICONTROL Select From]** 선택한 다음 을 탭하여 로컬 파일 시스템에 저장된 **[!UICONTROL Select Schema]** demo.schema JSON **** 스키마를 업로드합니다. 을 **[!UICONTROL Save & Close]** 눌러 양식을 저장합니다.
 1. 대출 신청 **샘플 양식을** 선택하고 을 탭합니다 **[!UICONTROL Edit]**.
-1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (구성)을 선택합니다.
+1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg) (구성)을 선택합니다.
 
-   참조 바인드 필드에서 신청자 **>** 이름을 **선택한**&#x200B;다음 ![완료 아이콘을](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 탭하여 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. JSON 스키마 엔티티가 있는 종속 패밀리 멤버** 필드
+   참조 바인드 필드에서 신청자 **>** 이름을 **선택한**&#x200B;다음 ![완료 아이콘을](assets/save_icon.svg) 탭하여 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. JSON 스키마 엔티티가 있는 종속 패밀리 멤버** 필드
 
 1. 변환된 **샘플 대출 신청 양식을** 다시 **[!UICONTROL output]** 선택하고 **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**&#x200B;를 선택합니다.</br>
 
@@ -347,7 +347,7 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
 
 ### XSD 스키마를 데이터 소스로 사용 {#xsddatasource}
 
-**** 사용 사례:자동화된 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 데이터 **** 미리 보기를 사용하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
+**사용 사례:** 자동화된 양식 변환 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 데이터 **** 미리 보기를 사용하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 제출합니다.
 
 사용 사례를 실행하기 전에 다음을 보유했는지 확인하십시오.
 
@@ -359,8 +359,8 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
 1. 변환된 **샘플 대출 신청 양식을** 선택한 후 **[!UICONTROL output]** 폴더를 누릅니다 **[!UICONTROL Properties]**.
 1. 탭을 누르고 **[!UICONTROL Form Model]** 드롭다운 목록에서 **[!UICONTROL Schema]** 선택한 다음 을 눌러 로컬 파일 시스템에 저장된 로컬 **[!UICONTROL Select From]** 응용 프로그램 **[!UICONTROL Select Schema]** XSD 스키마를 **** 업로드합니다. XSD 스키마의 루트 요소를 선택하고 을 탭하여 양식을 **[!UICONTROL Save & Close]** 저장합니다.
 1. 대출 신청 **샘플 양식을** 선택하고 을 탭합니다 **[!UICONTROL Edit]**.
-1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (구성)을 선택합니다.
-참조 바인드 필드에서 신청자 **>** 이름을 **선택하고**&#x200B;완료 아이콘을 ![눌러](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. XSD 스키마 엔티티가 있는 종속 패밀리 멤버** 필드
+1. 신청자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg) (구성)을 선택합니다.
+참조 바인드 필드에서 신청자 **>** 이름을 **선택하고**&#x200B;완료 아이콘을 ![눌러](assets/save_icon.svg) 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **이메일**, **직업**, ******연간 임금(달러)에 대한 데이터 바인딩, 그리고 아니요 등의 데이터를 만듭니다. XSD 스키마 엔티티가 있는 종속 패밀리 멤버** 필드
 
 1. 변환된 **샘플 대출 신청 양식을** 다시 **출력** 폴더에서 사용할 수 있도록 선택하고 **[!UICONTROL Preview]** > 를 선택합니다 **[!UICONTROL Preview with Data]**.</br>
 
@@ -381,7 +381,7 @@ JSON 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 �
 
 ### 데이터 소스로 JSON 스키마 사용 {#jsonwithdatabinding}
 
-**** 사용 사례:자동화된 양식 변환 서비스를 사용하여 JSON 데이터 바인딩으로 적응형 양식을 생성합니다. 프리플라이트 서비스 및 양식 제출 기능이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.
+**사용 사례:** 자동화된 양식 변환 서비스를 사용하여 JSON 데이터 바인딩으로 적응형 양식을 생성합니다. 프리플라이트 서비스 및 양식 제출 기능이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.
 
 사용 사례를 실행하기 전에 데이터 바인딩이 [](#generate-adaptive-forms-with-json-binding)있는 응용 양식이 있는지 확인하십시오.
 
