@@ -2,7 +2,7 @@
 title: 새로운 기능? 릴리스 노트 - 자동화된 양식 변환 서비스
 description: '자동화된 양식 변환 서비스에 대한 최신 기능과 버그에 대한 자세한 내용 '
 translation-type: tm+mt
-source-git-commit: e88b9606878cb408c0369b5f20a644db93578f64
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -40,4 +40,4 @@ source-git-commit: e88b9606878cb408c0369b5f20a644db93578f64
 
 AFC-2020.03.1 릴리스에서 제공되는 최신 기능과 향상된 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.AEM 패키지 공유에서 커넥터 패키지를 다운로드할 [수 있습니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN).
 
-자동화된 양식 전환 서비스 환경을 이미 사용 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms 추가 기능 패키지 및 최신 커넥터 패키지를 위에 나열된 순서대로 설치합니다. 자세한 지침은 자동화된 양식 [변환 서비스](configure-service.md) 구성 문서를 참조하십시오.
+자동화된 양식 전환 서비스 환경을 이미 사용하고 있는 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms Add-on 패키지 및 최신 커넥터 패키지를 지정된 순서로 설치합니다. 자세한 지침은 자동화된 양식 [변환 서비스](configure-service.md) 구성 문서를 참조하십시오.
