@@ -2,7 +2,7 @@
 title: 자동 양식 전환 서비스 구성
 description: AEM 인스턴스에서 자동화된 양식 전환 서비스를 사용할 수 있도록 준비
 translation-type: tm+mt
-source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -79,7 +79,7 @@ AFC-2020.03.1 릴리스에서 제공되는 최신 기능과 향상된 기능을 
 | Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
 
 >[!NOTE]
-> 자동화된 양식 전환 서비스 환경을 이미 사용 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms Add-on 패키지 및 최신 커넥터 패키지를 위의 순서대로 설치합니다.
+> 자동화된 양식 전환 서비스 환경을 이미 사용하고 있는 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms Add-on 패키지 및 최신 커넥터 패키지를 지정된 순서로 설치합니다.
 
 
 ### 사용자 정의 테마 및 템플릿 만들기 {#referencepackage}
