@@ -2,7 +2,7 @@
 title: 자동 양식 전환 서비스 구성
 description: AEM 인스턴스에서 자동화된 양식 전환 서비스를 사용할 수 있도록 준비
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 1. [AEM 6.4 또는 AEM 6.5 다운로드 및 설치](#aemquickstart)
 1. [최신 AEM 서비스 팩 다운로드 및 설치](#servicepack)
 1. [최신 AEM Forms 추가 기능 패키지 다운로드 및 설치](#downloadaemformsaddon)
+1. [최신 커넥터 패키지 다운로드 및 설치](#installConnectorPackage)
 1. [사용자 정의 테마 및 템플릿 만들기](#referencepackage)
 
 ### AEM 6.4 또는 AEM 6.5 다운로드 및 설치 {#aemquickstart}
@@ -65,8 +66,20 @@ AEM을 다운로드한 후 AEM 작성자 인스턴스 설정에 대한 지침은
 AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 전체 기능이 필요합니다. AEM Forms Add-on 패키지를 다운로드하여 AEM Forms의 모든 기능을 사용할 수 있습니다. 전환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 데이터 [캡처 기능 설치 및 구성을 참조하십시오.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> 자동화된 양식 전환 서비스의 기존 사용자는 최신 AEM Forms Add-on을 설치하여 서비스를 계속 사용합니다. 커넥터 패키지가 AEM Forms Add-on 패키지에 병합됩니다. 더 이상 추가 커넥터 패키지가 필요하지 않습니다.
 > Add-on 패키지를 설치한 후 필수 설치 후 구성을 수행해야 합니다.
+
+
+### 커넥터 패키지 다운로드 및 설치 {#installConnectorPackage}
+
+AFC-2020.03.1 릴리스에서 제공되는 최신 기능과 향상된 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.AEM 패키지 공유에서 커넥터 패키지를 다운로드할 수 있습니다.
+
+| 운영 체제 | 커넥터 패키지 다운로드 링크 |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> 자동화된 양식 전환 서비스 환경을 이미 사용 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms Add-on 패키지 및 최신 커넥터 패키지를 위의 순서대로 설치합니다.
 
 
 ### 사용자 정의 테마 및 템플릿 만들기 {#referencepackage}
