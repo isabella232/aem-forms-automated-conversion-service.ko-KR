@@ -2,7 +2,7 @@
 title: 새로운 기능? 릴리스 노트 - 자동화된 양식 변환 서비스
 description: '자동화된 양식 변환 서비스에 대한 최신 기능과 버그에 대한 자세한 내용 '
 translation-type: tm+mt
-source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
+source-git-commit: dc17dfcb331df6144b8a7ce3c9c9d840b1182a95
 
 ---
 
@@ -11,8 +11,10 @@ source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 자동화된 양식 변환 서비스는 지속적으로 개선됩니다. 최신 정보를 얻으려면 이 페이지를 정기적으로 방문해 보십시오. 이 페이지에서는 다음 정보를 제공합니다.
 
+* 빠른 액세스
 * 최신 릴리스
 * 새로운 기능
+* 개선
 * 버그 수정
 * 더 이상 사용되지 않는 기능
 * 특별 지침
@@ -20,22 +22,18 @@ source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 ## 2020년 3월 20일 (AFC-2020.03.1)
 
-### 새로운 기능
+### 빠른 액세스
 
 **양식에서 논리 섹션 자동 검색**
 
+AFC-2020.03.1 릴리스는 이 **[!UICONTROL Auto-detect logical sections]** 기능에 대한 빠른 액세스를 제공합니다.
+
 기본적으로 서비스는 PDF 양식의 각 페이지에 대해 별도의 최상위 패널을 만듭니다. 이제 이 **[!UICONTROL Auto-detect logical sections]** 옵션을 사용하여 페이지 수준 패널(페이지 번호 기반 패널)을 삭제하고 논리 패널만 만들 수 있습니다.  또한 논리 섹션과 논리 섹션의 필드가 인접한 두 페이지에 걸쳐 하나의 논리 섹션으로 분산되어 있는 섹션이 없는 필드를 분류합니다. 예를 들어 논리 섹션의 일부 필드가 페이지 1의 끝에 있고, 일부 필드가 페이지 2의 시작 부분에 있는 경우, 이러한 모든 필드가 단일 논리 섹션으로 컴파일됩니다.
+
+이 **[!UICONTROL Auto-detect logical sections]** 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다. AEM 패키지 공유에서 커넥터 패키지를 다운로드할 [수 있습니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 ### 향상된 기능
 
 **향상된 목록 감지**
 
-글머리 기호 및 번호 매기기 목록을 보다 효율적으로 검색할 수 있습니다. 이제 다중 수준 목록을 쉽게 감지할 수 있습니다.
-
-### 특별 지침
-
-**자동화된 양식 변환 서비스 커넥터 패키지 설치**
-
-AFC-2020.03.1 릴리스에서 제공되는 최신 기능과 향상된 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.AEM 패키지 공유에서 커넥터 패키지를 다운로드할 [수 있습니다](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
-
-자동화된 양식 전환 서비스 환경을 이미 사용하고 있는 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms Add-on 패키지 및 최신 커넥터 패키지를 지정된 순서로 설치합니다. 자세한 지침은 자동화된 양식 [변환 서비스](configure-service.md) 구성 문서를 참조하십시오.
+글머리 기호 및 번호 매기기 목록을 보다 효율적으로 검색할 수 있습니다.
