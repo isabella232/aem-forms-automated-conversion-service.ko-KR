@@ -1,6 +1,6 @@
 ---
-title: 'PDF 양식을 적응형 양식으로 변환 '
-seo-title: 'PDF 양식을 적응형 양식으로 변환 '
+title: 'PDF 양식을 적응형 양식으로 전환 '
+seo-title: 'PDF 양식을 적응형 양식으로 전환 '
 description: 자동화된 양식 변환 서비스를 실행하여 PDF 양식을 적응형 양식으로 변환
 seo-description: 자동화된 양식 변환 서비스를 실행하여 PDF 양식을 적응형 양식으로 변환
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
@@ -8,12 +8,12 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bbf39e3bae55654f92a50f52a22cee5da938236d
+source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
 
 ---
 
 
-# PDF 양식을 적응형 양식으로 변환 {#convert-print-forms-to-adaptive-forms}
+# PDF 양식을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
 Adobe Sensei 기반의 AEM Forms Automated Forms Conversion Service는 PDF 양식을 장치 친화적인 적응형 양식으로 자동 변환합니다. 비대화형 PDF 양식, Acro Forms 또는 XFA 기반 PDF 양식을 사용하는 경우 자동화된 양식 변환 서비스를 사용하면 이러한 양식을 적응형 양식으로 손쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 자동화된 [양식 전환 서비스를](introduction.md) 참조하십시오.
 
@@ -21,9 +21,9 @@ Adobe Sensei 기반의 AEM Forms Automated Forms Conversion Service는 PDF 양�
 
 * [**전환 서비스 구성&#x200B;**](configure-service.md)
 
-* **[변환된 양식에 적용할](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)템플릿을** 준비합니다.템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 변환 중 적응형 양식에 적용됩니다.
+* **변환된 양식에 적용할[템플릿을](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비합니다.** 템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 변환 중 적응형 양식에 적용됩니다.
 
-* **[변환된 양식에 적용할](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)테마를** 준비합니다.테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
+* **변환된 양식에 적용할[테마를](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)준비합니다.** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
 ## 전환 프로세스 시작 {#start-the-conversion-process}
 
@@ -37,12 +37,12 @@ AEM 인스턴스를 AEM Forms 전환 서비스와 연결하면 PDF 양식을 적
 
 전환 서비스는 AEM Forms 인스턴스에서 사용할 수 있는 PDF 양식을 적응형 양식으로 변환합니다. 필요에 따라 모든 PDF 양식을 한 번에 또는 단계별로 업로드할 수 있습니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
-* 한 폴더에 있는 양식 수를 15개 미만으로 유지하고 폴더의 총 페이지 수를 50개 미만으로 유지합니다.
+* 폴더의 양식 수는 15개 미만으로 유지하고 폴더의 총 페이지 수는 50개 미만으로 유지합니다.
 * 폴더 크기를 10MB 이하로 유지합니다. 양식을 하위 폴더에 보관하지 마십시오.
 * 양식의 페이지 수를 15개 미만으로 유지합니다.
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 보호된 양식을 변환하지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
-* PDF 포트폴리오를 업로드하지 [마십시오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). 서비스는 PDF 포트폴리오를 적응형 양식으로 변환하지 않습니다.
+* [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF 포트폴리오를 적응형 양식으로 전환하지 않습니다.
 * 알려진 문제 [및](known-issues.md) 우수 사례 [및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 섹션을 읽고 양식을 제안된 대로 변경합니다.
 
 AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다음 단계를 수행하십시오.
@@ -91,6 +91,10 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
 
    * 데스크톱 및 랩탑과 같은 대형 화면에 대해 소스 양식의 레이아웃을 유지하려면 이 **[!UICONTROL Auto-detect multi-column layout of input forms]** 옵션을 선택합니다. 이 옵션은 소스 양식의 다중 열 레이아웃을 유지하는 데 유용합니다. 예를 들어 소스 PDF에 2열 레이아웃이 있는 경우 서비스는 대형 화면 디스플레이에 대한 2열 레이아웃과 휴대폰과 같은 작은 화면 장치에 대한 단일 열 레이아웃으로 출력 적응형 양식을 생성합니다. 이 기능에는 데이터 소스 스키마 구조에 알려진 몇 가지 문제가 있습니다. 자세한 내용은 [알려진 문제](known-issues.md) 문서를 참조하십시오.
+   * 기본적으로 서비스는 PDF 양식의 각 페이지에 대해 별도의 최상위 패널을 만듭니다. 이제 이 **[!UICONTROL Auto-detect logical sections]** 옵션을 사용하여 페이지 수준 패널(페이지 번호 기반 패널)을 삭제하고 논리 패널만 만들 수 있습니다. 또한 논리 섹션과 논리 섹션의 필드가 인접한 두 페이지에 걸쳐 하나의 논리 섹션으로 분산되어 있는 섹션이 없는 필드를 분류합니다. 예를 들어 논리 섹션의 일부 필드가 페이지 1의 끝에 있고, 일부 필드가 페이지 2의 시작 부분에 있는 경우, 이러한 모든 필드가 단일 논리 섹션으로 컴파일됩니다.
+
+      >[!NOTE]
+      > 이 **[!UICONTROL Auto-detect logical sections]** 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.
 
 
 
@@ -127,6 +131,6 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    >
    >변환 프로세스가 60분 이상 걸리고 PDF 양식이 여전히 적응형 양식으로 변환되지 않는 경우 AEM Forms 인스턴스에 새 폴더를 만들고 PDF 양식을 새로 만든 폴더에 업로드한 다음 변환을 다시 시작합니다.
 
-## 변환된 양식 검토 및 수정 {#review-and-correct-the-converted-forms}
+## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
-실제 양식에는 복잡한 데이터 캡처 요구 사항이 있습니다. 자동 변환이 완료되면 고객은 양식의 전환 품질을 검토하고 필요한 업데이트를 수행할 수 있습니다. AEM Forms는 필요한 변경 작업을 수행하는 [검토 및 수정](review-correct-ui-edited.md) 편집기를 제공합니다. 양식 필드의 자동 식별을 향상시키고 식별된 필드를 한 유형에서 다른 유형으로 변환할 수 있습니다. 예를 들어 양식의 두 열 레이아웃을 식별하고 라디오 단추로 자동 식별된 필드를 여러 선택 필드로 변경할 수 있습니다.
+실제 양식에는 복잡한 데이터 캡처 요구 사항이 있습니다. 자동 변환이 완료되면 고객은 양식의 전환 품질을 검토하고 필요한 업데이트를 수행할 수 있습니다. AEM Forms는 필요한 변경 작업을 수행하는 [검토 및 수정](review-correct-ui-edited.md) 편집기를 제공합니다. 양식 필드의 자동 식별을 개선하고 식별된 필드를 한 유형에서 다른 유형으로 변환할 수 있습니다. 예를 들어 양식의 두 열 레이아웃을 식별하고 라디오 단추로 자동 식별된 필드를 여러 선택 필드로 변경할 수 있습니다.
