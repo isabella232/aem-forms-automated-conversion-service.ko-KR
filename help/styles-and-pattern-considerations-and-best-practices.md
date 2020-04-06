@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
@@ -20,12 +20,12 @@ source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
 
 전환 서비스는 AEM Forms 인스턴스에서 사용할 수 있는 PDF 양식을 적응형 양식으로 변환합니다. 필요에 따라 모든 PDF 양식을 한 번에 또는 단계별로 업로드할 수 있습니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
-* 한 폴더에 있는 양식 수를 15개 미만으로 유지하고 폴더의 총 페이지 수를 50개 미만으로 유지합니다.
+* 폴더의 양식 수는 15개 미만으로 유지하고 폴더의 총 페이지 수는 50개 미만으로 유지합니다.
 * 폴더 크기를 10MB 이하로 유지합니다. 양식을 하위 폴더에 보관하지 마십시오.
 * 양식의 페이지 수를 15개 미만으로 유지합니다.
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 보호된 양식을 변환하지 않습니다.
-* PDF 포트폴리오를 업로드하지 [마십시오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). 서비스는 PDF 포트폴리오를 적응형 양식으로 변환하지 않습니다.
-* 스캔한 양식, 컬러, 영어 이외의 언어 및 채워진 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
+* Do not upload the [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). 이 서비스는 PDF 포트폴리오를 적응형 양식으로 전환하지 않습니다.
+* 스캔, 컬러, 영어 이외의 언어 및 채워진 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
 * 적응형 양식 템플릿을 사용하여 출력 적응형 양식의 머리글과 바닥글을 지정합니다. 이 서비스는 소스 PDF 문서의 머리글과 바닥글을 무시하고 적응형 양식 템플릿에 지정된 머리글과 바닥글을 사용합니다.
 
@@ -39,7 +39,7 @@ AEM Forms 자동 전환 서비스는 인공 지능 및 머신 러닝 알고리�
 
 ### 일반 패턴 {#general}
 
-| 패턴 | 해상도 |
+| 패턴 | 예 |
 |--- |--- |
 | **Pattern** Service는 컬러 PDF 양식을 적응형 양식으로 변환하지 않습니다 <br> . <br><br>**해상도&#x200B;**흑백 또는 회색 음영 PDF 양식을 사용합니다<br>. | ![컬러 양식](assets/best-practice-coloured-forms.png) |
 | **패턴** 서비스는 <br>채워진 PDF 양식을 적응형 양식으로 변환하지 않습니다. <br><br>**해상도&#x200B;**빈<br>적응형 양식을 사용합니다. | ![채워진 양식](assets/best-practice-filled-forms.png) |
@@ -63,7 +63,7 @@ AEM Forms 자동 전환 서비스는 인공 지능 및 머신 러닝 알고리�
 |--- |--- |
 | **패턴** 서비스는 <br> 테두리를 지우지 않으면 필드를 식별하지 않습니다. <br><br>**해결&#x200B;**: 검토<br>및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![불명확한 경계로 된 필드](assets/best-practice-fields-without-clear-borders.png) |
 | **패턴** 서비스는 <br> 양식의 맨 아래 또는 오른쪽에 캡션이 있는 일부 선택 그룹 양식 필드를 식별하지 못할 수 있습니다. <br><br>**해결&#x200B;**: 검토<br>및 수정 편집기를 사용하여 해당 필드 식별 | ![Choice 필드](assets/best-practice-caption-bottom-right.png) |
-| **Pattern** Service는 <br> 서로 매우 가깝게 배치되거나 경계가 명확하지 않은 일부 양식 필드에 잘못된 유형을 병합하거나 할당합니다. <br><br>**해결&#x200B;**: 검토<br>및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![Choice 필드](assets/best-practice-placed-very-near.png) |
+| **Pattern** Service는 <br> 서로 매우 가깝게 배치되거나 경계가 명확하지 않은 일부 양식 필드에 잘못된 유형을 병합 또는 할당합니다. <br><br>**해결&#x200B;**: 검토<br>및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![Choice 필드](assets/best-practice-placed-very-near.png) |
 | **패턴** 서비스는 <br> 멀리 떨어져 있는 캡션이나 캡션과 입력 필드 사이에 있는 점선이 있는 필드를 인식하지 못할 수 있습니다. <br><br>**해결책&#x200B;**명확한 경계가 있는 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 수정할 수 있습니다<br>. | ![멀리 떨어진 필드 또는 자막 필드 사이의 점선](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### 목록 {#lists}
@@ -71,7 +71,7 @@ AEM Forms 자동 전환 서비스는 인공 지능 및 머신 러닝 알고리�
 | 패턴 | 해상도 |
 |--- |--- |
 | **양식** 필드가 포함된 패턴 <br>목록은 병합되거나 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해상도&#x200B;**<br>명확한 경계가 있는 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 수정할 수 있습니다. | ![선택 그룹이 포함된 목록](assets/best-practice-lists-containing-form-fields.png) |
-| **Pattern** Service는 <br>확인되지 않은 몇 개의 중첩된 목록을 <br><br>**남겨 두어서&#x200B;**이러한<br>문제를 수정할 수 있습니다. 검토 및 수정 편집기를 사용합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |
+| **Pattern** Service는 <br>확인되지 않은 몇 개의 중첩된 목록을 <br><br>**남겨 두어서&#x200B;**이러한 문제를 수정할<br>수 있습니다. 검토 및 수정 편집기를 사용합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |
 | **Pattern** Service는 선택 그룹이 포함된 일부 목록을 다른 Resolution <br> Use Review and Correct <br><br>**편집기와 결합하여&#x200B;**<br>이러한 문제를 수정합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
