@@ -7,7 +7,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 5d4dba8fea7439b991a7a15872e6f4ed48156ac9
+source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
 
@@ -148,7 +148,7 @@ aem:affKeyword를 사용하여 참조되는 **키워드를**&#x200B;기준으로
   </tr>
   <td><p>패턴</p></td> 
    <td> 
-    <p>pattern 속성은 정규 표현식을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 예를 들어, 메타 모델의 다음 코드는 생성된 적응형 양식 필드의 값을 10자리로 제한합니다.<br>"pattern":"/\\d{10}/"<br>마찬가지로 메타 모델의 다음 코드에서도 필드 값을 특정 날짜 형식으로 제한합니다.<br> "pattern":"date{DD MMMM, YYYY}",</p> </td> 
+    <p>pattern 속성은 정규 표현식을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 예를 들어 메타 모델의 다음 코드는 생성된 적응형 양식 필드의 값을 10자리로 제한합니다.<br>"pattern":"/\\d{10}/"<br>마찬가지로 메타 모델의 다음 코드에서도 필드 값을 특정 날짜 형식으로 제한합니다.<br> "pattern":"date{DD MMMM, YYYY}",</p> </td> 
   </tr>
   <td><p>format</p></td> 
    <td> 
@@ -189,9 +189,9 @@ aem:affKeyword를 사용하여 참조되는 **키워드를**&#x200B;기준으로
    <th><strong>설명</strong></th> 
   </tr> 
   <tr> 
-   <td><p>멀티라인</p></td> 
+   <td><p>multiLine</p></td> 
    <td> 
-    <p>다중 행 속성은 변환 후 소스 양식 필드를 적응형 양식의 여러 줄 필드로 변환합니다. 자세한 내용은 <strong>사용자 지정 메타 모델 예에서 문자열 필드를 여러 줄 필드로</strong> 변환을 <a href="#custommetamodelexamples">참조하십시오.</a></p> </td> 
+    <p>multiLine 속성은 변환 후 소스 양식 필드를 적응형 양식의 여러 줄 필드로 변환합니다. 자세한 내용은 <strong>사용자 지정 메타 모델 예에서 문자열 필드를 여러 줄 필드로</strong> 변환을 <a href="#custommetamodelexamples">참조하십시오.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -252,7 +252,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 #### 양식 필드의 레이블 수정 {#modify-the-label-of-a-form-field}
 
-**** 예:양식의 은행 계정 번호 레이블을 전환 후 적응형 양식의 사용자 지정 계정 번호로 수정합니다.
+**예:** 양식의 은행 계정 번호 레이블을 전환 후 적응형 양식의 사용자 지정 계정 번호로 수정합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **title** 속성을 검색 키워드로 사용합니다. 양식에서 은행 **계정 번호** 텍스트를 검색한 후 변환 서비스는 aem:afProperties **섹션의** jcr:title **속성에 언급된** 고객 계정 번호 **문자열로** 텍스트를대체합니다.
 
@@ -351,7 +351,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 #### 적응형 양식 필드에 유효성 검사 추가 {#add-validations-to-adaptive-form-fields}
 
-**** 예 1:응용 양식의 **우편** 번호 필드에 유효성 검사를 추가합니다.
+**예 1:** 응용 양식의 **우편** 번호 필드에 유효성 검사를 추가합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **우편 번호** 텍스트를 검색한 후 변환 서비스는 **aem:afProperties** 섹션에 정의된 validatePictureClause **속성을 사용하여 필드에** 유효성 검사를 추가합니다. 확인 결과에 따라 전환 후 적응형 양식의 **우편 번호** 필드에 지정한 입력에는 6자가 포함되어야 합니다.
 
@@ -367,7 +367,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-**** 예 2:적응형 양식의 은행 **계정 번호** 필드에 검증을 추가합니다.
+**예 2:** 적응형 양식의 은행 **계정 번호** 필드에 검증을 추가합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 변환 서비스는 양식에서 **은행 계좌 번호** 텍스트를 검색한 후 **aem:afProperties** 섹션에 정의된 **필수** 속성을 사용하여 필드에 유효성 검사를추가합니다. 확인 결과에 따라 전환 후 **양식을 제출하기 전에 은행 계좌 번호** 필드에 값을 지정해야 합니다.
 
@@ -419,7 +419,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 #### 드롭다운 목록에 추가 옵션 추가 {#add-additional-options-to-the-drop-down-list}
 
-**** 예:사용자 **지정** 메타 모델을 사용하여 기존의 드롭다운 목록에 추가 옵션으로 스리랑카를 추가합니다.
+**예:** 사용자 **지정** 메타 모델을 사용하여 기존의 드롭다운 목록에 추가 옵션으로 스리랑카를 추가합니다.
 
 추가 옵션을 추가하려면 새 옵션을 사용하여 **enum** 속성을 업데이트하십시오. 이 예에서 **enum** 속성을 추가 **옵션으로** 업데이트합니다. 열거형 **속성에 나열된** 값이 드롭다운 목록에 표시됩니다.
 
@@ -447,19 +447,19 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 #### 문자열 필드를 여러 줄 필드로 변환 {#convert-a-string-field-to-a-multi-line-field}
 
-**** 예:변환 **후** 문자열 유형의 주소 필드를 양식의 여러 줄 필드로 변환합니다.
+**예:** 변환 **후** 문자열 유형의 주소 필드를 양식의 여러 줄 필드로 변환합니다.
 
-이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **주소** 텍스트를 검색한 후 서비스는 aem:afProperties에 정의된 **여러 줄** 속성을 사용하여 텍스트 필드를 여러 줄 필드로 **변환합니다** .
+이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **주소** 텍스트를 검색한 후 서비스는 aem:afProperties에 정의된 **multiLine** 속성을 사용하여 텍스트 **필드를 여러 줄 필드로** 변환합니다.
 
 ```
 {
- "multiline" : {
+ "multiLine" : {
    "aem:affKeyword": [
       "Address"
     ],
     "type" : "string",
     "aem:afProperties": {
-      "multiline": "true"
+      "multiLine": "true"
     }
   }
 }
