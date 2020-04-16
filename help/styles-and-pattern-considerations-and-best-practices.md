@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
+source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
 
 ---
 
@@ -20,7 +20,8 @@ source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 전환 서비스는 AEM Forms 인스턴스에서 사용할 수 있는 PDF 양식을 적응형 양식으로 변환합니다. 아래 나열된 우수 사례는 전환 속도와 정확도를 개선하는 데 도움이 됩니다. 또한 이러한 우수 사례는 전환 활동 후 체류 시간을 줄이는 데 도움이 됩니다.
 
-### 소스 양식을 업로드하기 전에
+### 소스를 업로드하기 전에
+
 필요에 따라 모든 PDF 양식을 한 번에 또는 단계별로 업로드할 수 있습니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
 * 폴더의 양식 수는 15개 미만으로 유지하고 폴더의 총 페이지 수는 50개 미만으로 유지합니다.
@@ -93,7 +94,7 @@ AEM Forms 자동 전환 서비스는 인공 지능 및 머신 러닝 알고리�
 | 패턴 | 해상도 |
 |--- |--- |
 | **양식** 필드가 포함된 패턴 <br>목록은 병합되거나 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해상도&#x200B;**<br>명확한 경계가 있는 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 수정할 수 있습니다. | ![선택 그룹이 포함된 목록](assets/best-practice-lists-containing-form-fields.png) |
-| **Pattern** Service는 <br>확인되지 않은 몇 개의 중첩된 목록을 <br><br>**남겨 두어서&#x200B;**이러한 문제를 수정할<br>수 있습니다. 검토 및 수정 편집기를 사용합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |
+| **Pattern** Service는 <br>확인되지 않은 몇 개의 중첩된 목록을 <br><br>**남겨 두어서&#x200B;**이러한<br>문제를 수정할 수 있습니다. 검토 및 수정 편집기를 사용합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |
 | **Pattern** Service는 선택 그룹이 포함된 일부 목록을 다른 Resolution <br> Use Review and Correct <br><br>**편집기와 결합하여&#x200B;**<br>이러한 문제를 수정합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
