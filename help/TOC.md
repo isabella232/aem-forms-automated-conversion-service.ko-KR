@@ -1,19 +1,19 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: forms conversion service
+sub-product: 양식 전환 서비스
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
+source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 
 ---
 
 
 # 목차 {#using}
 + [릴리스 노트](release-notes.md)
-+ [자동 양식 전환 서비스 소개](introduction.md)
-+ [자동 양식 전환 서비스 구성](configure-service.md)
++ [소개](introduction.md)
++ [서비스 구성](configure-service.md)
 + [인쇄 양식을 적응형 양식으로 전환](convert-existing-forms-to-adaptive-forms.md)
 + [전환된 양식 검토 및 수정](review-correct-ui-edited.md)
 + [기본 메타 모델 확장](extending-the-default-meta-model.md)
@@ -23,4 +23,5 @@ source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
 + [FAQ](frequently-asked-questions.md)
 + [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md)
 + [알려진 문제](known-issues.md)
++ [서비스 문제 해결](troubleshoot-afcs.md)
 
