@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
+source-git-commit: 83e35b3cf21c1348c09dcddbae3edf77990457d0
 
 ---
 
@@ -38,8 +38,8 @@ source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
 * XDP 양식을 분석하고 시각적 문제를 수정합니다. 소스 문서에서 의도한 컨트롤과 구조를 사용하는지 확인합니다. 예를 들어 소스 양식에는 단일 선택 항목에 대한 라디오 단추 대신 확인란이 있을 수 있습니다. 확인란을 라디오 단추로 변경하여 원하는 구성 요소가 있는 응용 양식을 만듭니다.
 * [변환을 시작하기 전에 XDP 양식에](http://www.adobe.com/go/learn_aemforms_designer_65) 바인딩을 추가합니다. 소스 XDP 양식에서 바인딩을 사용할 수 있으면 서비스는 변환 중에 해당 적응형 양식 필드에 바인딩을 자동으로 적용합니다. 바인딩을 수동으로 적용하는 데 필요한 시간을 절약할 수 있습니다.
 * [XDP 파일에 Adobe Sign 태그를](https://helpx.adobe.com/sign/using/text-tag.html) 추가합니다. 서비스는 Adobe Sign 태그를 해당 적응형 양식 필드로 자동 변환합니다. 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다. 지원되는 전체 필드 목록은 적응형 양식 [](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) 문서에서 Adobe Sign 사용을 참조하십시오.
-* XDP 문서의 하위 양식을 사용하여 적응형 양식으로 패널을 만들 수 있습니다. 전환 중에 서비스는 각 하위 양식을 응용 양식 패널로 변환합니다.
 * 가능한 경우 XDP 문서의 복잡한 표를 간단한 표로 변환할 수 있습니다. 표 셀에 양식 필드, 불규칙한 크기 셀, 행 또는 열 스팬 셀, 병합된 셀, 부분 테두리 또는 보이지 않는 테두리가 있는 표는 복잡한 표로 간주됩니다. 앞서 언급한 항목 중 하나가 있는 테이블은 복잡한 테이블로 간주됩니다.
+<!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### 전환을 시작하기 전에
 
