@@ -6,15 +6,16 @@ seo-description: 일반적인 AFCS 문제 및 해당 솔루션
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
+source-git-commit: c413c5dc2da3a3e7e116b3355c63620f9dab17f8
 
 ---
 
 
 # 자동화된 양식 변환 서비스 문제 해결
 
+이 문서에서는 일반적인 오류에 대한 기본적인 문제 해결 단계를 제공합니다.
 
-<!--The article provides information on installation, configuration and administration issues that may arise in an Automated Forms Conversion Service production environment. --> The document  provides basic troubleshooting steps for common errors.
+<!--The article provides information on installation, configuration and administration issues that may arise in an Automated Forms Conversion Service production environment. -->
 
 ## 일반적인 오류 {#commonerrors}
 
