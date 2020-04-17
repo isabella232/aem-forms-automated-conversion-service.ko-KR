@@ -20,7 +20,7 @@ source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 | 오류 | 예 |
 |--- |--- |
-| **오류** 메시지 <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **이유** 관리자가 여러 IMS 구성 또는 IMS 구성을 만든 경우 Adobe <br> Cloud의 ACS 서비스에 연결할 수 없습니다. <br><br>**해상도&#x200B;**구성이 여러 개인 경우 모든 구성을 삭제하고 새 구성을<br>[](configure-service.md#obtainpubliccertificates)만듭니다.<br>단일 구성이 있는 경우 상태 확인을 사용하여**&#x200B;연결을&#x200B;**[확인합니다](configure-service.md#createintegrationoption). | ![액세스 토큰 헤더를 사용할 수 없습니다.](assets/invalid-ims-configurations.png) |
+| **오류** 메시지 <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br>**이유&#x200B;**관리자가 여러 IMS 구성 또는 IMS 구성을 만든 경우 Adobe<br>Cloud의 ACS 서비스에 연결할 수 없습니다.<br><br>**해상도** 구성이 여러 개인 경우 모든 구성을 삭제하고 새 구성을 <br> [](configure-service.md#obtainpubliccertificates)만듭니다. <br> 단일 구성이 있는 경우 상태 확인을 사용하여 **연결을** [확인합니다](configure-service.md#createintegrationoption). | ![액세스 토큰 헤더를 사용할 수 없습니다.](assets/invalid-ims-configuration.png) |
 
 | 오류 | 예 |
 |--- |--- |
