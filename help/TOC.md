@@ -5,12 +5,13 @@ sub-product: 양식 전환 서비스
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
 translation-type: tm+mt
-source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
+source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 ---
 
 
 # 목차 {#using}
+
 + [릴리스 노트](release-notes.md)
 + [소개](introduction.md)
 + [서비스 구성](configure-service.md)
@@ -24,4 +25,3 @@ source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
 + [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md)
 + [알려진 문제](known-issues.md)
 + [문제 해결](troubleshoot-afcs.md)
-
