@@ -6,7 +6,7 @@ seo-description: 일반적인 AFCS 문제 및 해당 솔루션
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
+source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 ---
 
@@ -20,7 +20,10 @@ source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
 
 | 오류 | 예 |
 |--- |--- |
-| **오류** 메시지 <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br>**이유&#x200B;**관리자가 여러 IMS 구성 또는 IMS 구성을 만든 경우 Adobe<br>Cloud의 ACS 서비스에 연결할 수 없습니다.<br><br>**해상도** 구성이 여러 개인 경우 모든 구성을 삭제하고 새 구성을 <br> [](configure-service.md#obtainpubliccertificates)만듭니다. <br> 단일 구성이 있는 경우 연결을 **[!UICONTROL Health Check]** 확인하는 [데 사용합니다](configure-service.md#createintegrationoption). | ![액세스 토큰 헤더를 사용할 수 없습니다.](assets/invalid-ims-configuration.png) |
+| **오류** 메시지 <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **이유** 관리자가 여러 IMS 구성 또는 IMS 구성을 만든 경우 Adobe <br> Cloud의 ACS 서비스에 연결할 수 없습니다. <br><br>**해상도&#x200B;**구성이 여러 개인 경우 모든 구성을 삭제하고 새 구성을<br>[](configure-service.md#obtainpubliccertificates)만듭니다.<br>단일 구성이 있는 경우 상태 확인을 사용하여**&#x200B;연결을&#x200B;**[확인합니다](configure-service.md#createintegrationoption). | ![액세스 토큰 헤더를 사용할 수 없습니다.](assets/invalid-ims-configurations.png) |
+
+| 오류 | 예 |
+|--- |--- |
 | **오류** 메시지 <br> 서비스에 연결할 수 없습니다.  <br><br>**Automated **Forms Conversion Service<br>클라우드 서비스에 잘못된 서비스 URL이나 서비스 URL이 언급되지 않은 이유<br><br>**Automated** Forms <br> Conversion Service Cloud [](configure-service.md#configure-the-cloud-service) 서비스의 Correct Service URL. | ![서비스에 연결할 수 없습니다.](assets/wrong-endpoint-configured.png) |
 | **오류** 메시지 <br> 서비스에서 양식을 변환하지 못했습니다.  <br><br>**Reason **<br>Network connectivity issues at your end, the service is down due to scheduled maintenance or on Adobe Cloud.<br><br>**문제 해결** 최종 <br> 시 네트워크 연결 문제를 해결하고 https://status.adobe.com/에서 서비스 상태를 확인하여 계획된 또는 예상치 못한 서비스 중단이 있는지 확인하십시오. | ![서비스에 연결할 수 없습니다.](assets/service-failure.png) |
 | **오류 메시지** 페이지 수가 <br> 15개를 초과합니다.  <br><br>**이유&#x200B;**소스 양식의 길이가<br>15페이지를 넘습니다.<br><br>**해상도** Adobe Acrobat을 사용하여 15페이지 이상의 양식을 분할할 수 있습니다 <br> . 양식의 페이지 수를 15개 미만으로 가져옵니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
