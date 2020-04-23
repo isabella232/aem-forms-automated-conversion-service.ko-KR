@@ -1,7 +1,7 @@
 ---
 title: 소개
 description: '인쇄 양식을 적응형 양식으로 신속하게 전환 '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
@@ -21,7 +21,7 @@ source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ## 온보딩 {#onboarding}
 
-이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms 온프레미스 고객 및 Adobe Managed Service 엔터프라이즈 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스 권한을 요청할 수 있습니다.
+이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms On-Premise 기간제 고객과 Adobe Managed Service 기업 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스 권한을 요청할 수 있습니다.
 
 Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 책임자는 해당 서비스에 연결할 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다. 자세한 내용은 [자동 양식 전환 서비스 구성](configure-service.md)을 참조하십시오.
 
