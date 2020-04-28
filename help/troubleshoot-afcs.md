@@ -1,19 +1,19 @@
 ---
-title: '자동화된 양식 변환 서비스 문제 해결 '
-seo-title: 'AFCS(Automated Forms Conversion Service) 문제 해결 '
-description: '일반적인 AFCS 문제 및 해당 솔루션 '
-seo-description: 일반적인 AFCS 문제 및 해당 솔루션
+title: '자동 양식 전환 서비스 문제 해결 '
+seo-title: 'AFCS(자동 양식 전환 서비스) 문제 해결 '
+description: '일반적인 AFCS 문제 및 해결 방법 '
+seo-description: 일반적인 AFCS 문제 및 해결 방법
 contentOwner: khsingh
 topic-tags: forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c413c5dc2da3a3e7e116b3355c63620f9dab17f8
 
 ---
 
 
-# 자동화된 양식 변환 서비스 문제 해결
+# 자동 양식 전환 서비스 문제 해결
 
-이 문서에서는 일반적인 오류에 대한 기본적인 문제 해결 단계를 제공합니다.
+이 문서에서는 일반적인 오류에 대한 기본적인 문제 해결 단계를 설명합니다.
 
 <!--The article provides information on installation, configuration and administration issues that may arise in an Automated Forms Conversion Service production environment. -->
 
@@ -21,15 +21,15 @@ source-git-commit: c413c5dc2da3a3e7e116b3355c63620f9dab17f8
 
 | 오류 | 예 |
 |--- |--- |
-| **오류** 메시지 <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **이유** 관리자가 여러 IMS 구성 또는 IMS 구성을 만든 경우 Adobe <br> Cloud의 ACS 서비스에 연결할 수 없습니다. <br><br>**해상도&#x200B;**구성이 여러 개인 경우 모든 구성을 삭제하고 새 구성을<br>[](configure-service.md#obtainpubliccertificates)만듭니다.<br>단일 구성이 있는 경우 상태 확인을 사용하여**&#x200B;연결을&#x200B;**[확인합니다](configure-service.md#createintegrationoption). | ![액세스 토큰 헤더를 사용할 수 없습니다.](assets/invalid-ims-configurations.png) |
-| **오류** 메시지 <br> 서비스에 연결할 수 없습니다.  <br><br>**Automated **Forms Conversion Service<br>클라우드 서비스에 잘못된 서비스 URL이나 서비스 URL이 언급되지 않은 이유<br><br>**Automated** Forms <br> Conversion Service Cloud [](configure-service.md#configure-the-cloud-service) 서비스의 Correct Service URL. | ![서비스에 연결할 수 없습니다.](assets/wrong-service-url-configured.png) |
-| **오류** 메시지 <br> 서비스에서 양식을 변환하지 못했습니다.  <br><br>**Reason **<br>Network connectivity issues at your end, the service is down due to scheduled maintenance or on Adobe Cloud.<br><br>**문제 해결** 최종 <br> 시 네트워크 연결 문제를 해결하고 https://status.adobe.com/에서 서비스 상태를 확인하여 계획된 또는 예상치 못한 서비스 중단이 있는지 확인하십시오. | ![서비스에 연결할 수 없습니다.](assets/conversion-failure.png) |
-| **오류 메시지** 페이지 수가 <br> 15개를 초과합니다.  <br><br>**이유&#x200B;**소스 양식의 길이가<br>15페이지를 넘습니다.<br><br>**해상도** Adobe Acrobat을 사용하여 15페이지 이상의 양식을 분할할 수 있습니다 <br> . 양식의 페이지 수를 15개 미만으로 가져옵니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
-| **오류** 메시지 <br> 파일 수가 15개를 초과합니다.  <br><br>**이유&#x200B;**폴더에는<br>15개 이상의 양식이 포함되어 있습니다.<br><br>**해상도** 폴더의 양식 수를 15개 이하로 가져옵니다 <br> . 폴더의 총 페이지 수를 50개 미만으로 가져옵니다. 폴더 크기를 10MB 이하로 가져옵니다. 양식을 하위 폴더에 보관하지 마십시오. 원본 양식을 8-15개의 양식으로 구성할 수 있습니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
-| **오류** 메시지 <br> 소스 파일 형식은 지원되지 않습니다.  <br><br>**이유&#x200B;**소스 양식이 포함된 폴더에 지원되지 않는 파일이 있습니다<br>.<br><br>**해결** . <br> 서비스는 .xdp 및 .pdf 파일만 지원합니다. 폴더에서 다른 확장자가 있는 파일을 제거하고 변환을 실행합니다. | ![서비스에 연결할 수 없습니다.](assets/unsupported-file-formats.png) |
-| **오류 메시지** 스캔한 <br> 양식은 지원되지 않습니다.  <br><br>**이유&#x200B;**PDF 양식에는<br>양식의 스캔한 이미지만 포함되어 있으며 컨텐츠 구조는 포함되어 있지 않습니다.<br><br>**해상도** 서비스는 <br> 스캔한 양식이나 양식의 이미지를 즉시 사용 가능한 양식으로 변환하는 것을 지원하지 않습니다. 그러나 Adobe Acrobat을 사용하면 양식의 이미지를 PDF 양식으로 변환할 수 있습니다. 그런 다음 서비스를 사용하여 PDF 양식을 적응형 양식으로 변환합니다. Acrobat에서 변환하려면 항상 양식의 고품질 이미지를 사용하십시오. 전환의 품질을 향상시킵니다. | ![서비스에 연결할 수 없습니다.](assets/scanned-forms-error.png) |
-| **오류 메시지** 암호화된 PDF <br> 양식은 지원되지 않습니다.  <br><br>**이유&#x200B;**폴더에는<br>암호화된 PDF 양식이 포함되어 있습니다.<br><br>**해상도** <br> 서비스에서 암호화된 PDF 양식을 적응형 양식으로 변환할 수 없습니다. 암호화를 제거하고 암호화되지 않은 양식을 업로드하고 변환을 실행합니다. | ![서비스에 연결할 수 없습니다.](assets/secured-pdf-form.png) |
-| **오류 메시지** 메타 모델 <br> JSON 스키마를 구문 분석할 수 없습니다.  <br><br>**이유&#x200B;**<br>서비스에 제공된 JSON 스키마 형식이 제대로 지정되지 않았거나, 잘못된 문자를 포함하거나, 구성 요소를 매핑하기 위해 잘못된 구문을 사용합니다.<br><br>**해상도** JSON <br> 파일의 형식을 확인합니다. 모든 온라인 JSON 유효성 검사기를 사용하여 스키마의 서식 및 구조를 확인할 수 있습니다. 메타 모델 [구문에 대한 자세한 내용은 기본 메타 모델](extending-the-default-meta-model.md) 아티클 확장을 참조하십시오. | ![서비스에 연결할 수 없습니다.](assets/invalid-meta-model-schema.png) |
+| **오류 메시지** <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **원인** <br> 관리자가 여러 개의 IMS 구성을 작성했거나 IMS 구성을 Adobe Cloud의 AFCS 서비스에 연결할 수 없습니다. <br><br>**해결 방법&#x200B;**<br>구성이 여러 개인 경우 모든 구성을 삭제하고[새 구성을 생성](configure-service.md#obtainpubliccertificates)합니다.<br>단일 구성이 있는 경우**&#x200B;상태 점검&#x200B;**을 사용하여[연결 상태를 확인](configure-service.md#createintegrationoption)합니다. | ![액세스 토큰 헤더를 사용할 수 없습니다](assets/invalid-ims-configurations.png) |
+| **오류 메시지** <br> 서비스에 연결할 수 없습니다.  <br><br>**원인&#x200B;**<br>자동 양식 전환 서비스 클라우드 서비스에서 서비스 URL이 잘못되었거나 서비스 URL이 언급되지 않았습니다.<br><br>**해결 방법** <br> 자동 양식 전환 서비스 클라우드 서비스에서 [서비스 URL](configure-service.md#configure-the-cloud-service)을 수정합니다. | ![서비스에 연결할 수 없습니다.](assets/wrong-service-url-configured.png) |
+| **오류 메시지** <br> 이 서비스에서 양식을 전환하지 못했습니다.  <br><br>**원인&#x200B;**<br>사용자 측 네트워크 연결 문제입니다. 예약된 유지 보수 또는 Adobe Cloud의 중단으로 인해 서비스가 중단되었습니다.<br><br>**해결 방법** <br> 사용자 측의 네트워크 연결 문제를 해결하고 https://status.adobe.com/에서 서비스 상태를 통해 계획된 운영 중단인지, 아니면 계획되지 않은 운영 중단인지 확인합니다. | ![서비스에 연결할 수 없습니다.](assets/conversion-failure.png) |
+| **오류 메시지** <br> 페이지 수가 15페이지를 넘습니다.  <br><br>**원인&#x200B;**<br>소스 양식의 길이가 15페이지를 넘습니다.<br><br>**해결 방법** <br> 15페이지 이상의 양식인 경우 Adobe Acrobat을 사용하여 페이지를 나눕니다. 양식의 페이지 수를 15개 미만으로 줄입니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
+| **오류 메시지** <br> 파일 수가 15개를 넘습니다.  <br><br>**원인&#x200B;**<br>폴더에 15개 이상의 양식이 있습니다.<br><br>**해결 방법** <br> 폴더의 양식 수를 15개 이하로 줄입니다. 폴더의 총 페이지 수를 50개 미만으로 줄입니다. 폴더 크기를 10MB 미만으로 줄입니다. 하위 폴더에 양식을 보관하지 마십시오. 소스 양식을 8~15개 양식의 배치로 구성합니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
+| **오류 메시지** <br> 소스 파일 형식이 지원되지 않습니다.  <br><br>**원인&#x200B;**<br>소스 양식이 포함된 폴더에 지원되지 않는 파일이 있습니다.<br><br>**해결 방법** <br> 이 서비스는 .xdp 및 .pdf 파일만 지원합니다. 폴더에서 다른 확장자가 있는 파일을 제거하고 전환을 실행합니다. | ![서비스에 연결할 수 없습니다.](assets/unsupported-file-formats.png) |
+| **오류 메시지** <br> 스캔한 양식이 지원되지 않습니다.  <br><br>**원인&#x200B;**<br>PDF 양식에는 양식의 스캔한 이미지만 포함되어 있으며 콘텐츠 구조는 포함되어 있지 않습니다.<br><br>**해결 방법** <br> 이 서비스는 스캔한 양식이나 양식의 이미지를 즉시 사용 가능한 적응형 양식으로 전환하는 것을 지원하지 않습니다. 그러나 Adobe Acrobat을 사용하면 양식의 이미지를 PDF 양식으로 전환할 수 있습니다. 그런 다음 이 서비스를 사용하여 PDF 양식을 적응형 양식으로 전환합니다. Acrobat에서 전환하려면 항상 고품질 양식 이미지를 사용하십시오. 전환 품질이 향상됩니다. | ![서비스에 연결할 수 없습니다.](assets/scanned-forms-error.png) |
+| **오류 메시지**<br> 암호화된 PDF 양식은 지원되지 않습니다.  <br><br>**원인&#x200B;**<br>폴더에 암호화된 PDF 양식이 포함되어 있습니다.<br><br>**해결 방법** <br> 이 서비스는 암호화된 PDF 양식을 적응형 양식으로 전환하는 것을 지원하지 않습니다. 암호화를 제거하고 암호화되지 않은 양식을 업로드하고 전환을 실행합니다. | ![서비스에 연결할 수 없습니다.](assets/secured-pdf-form.png) |
+| **오류 메시지** <br> 메타 모델 JSON 스키마를 구문 분석할 수 없습니다.  <br><br>**원인&#x200B;**<br>이 서비스에 제공된 JSON 스키마 형식이 제대로 지정되지 않았거나, 잘못된 문자를 포함하거나, 구성 요소를 매핑하는 데 잘못된 구문을 사용합니다.<br><br>**해결 방법** <br> JSON 파일의 형식을 확인합니다. 모든 온라인 JSON 유효성 검사기를 사용하여 스키마의 형식 및 구조를 확인할 수 있습니다. 메타 모델 구문에 대한 자세한 내용은 [기본 메타 모델 확장](extending-the-default-meta-model.md) 문서를 참조하십시오. | ![서비스에 연결할 수 없습니다.](assets/invalid-meta-model-schema.png) |
 
 <!--
 
