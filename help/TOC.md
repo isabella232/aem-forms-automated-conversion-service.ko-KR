@@ -4,8 +4,8 @@ product: experience manager
 sub-product: 양식 전환 서비스
 audience: end-user
 user-guide-title: Adobe Experience Manager 자동 양식 전환 서비스
-translation-type: ht
-source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
+translation-type: tm+mt
+source-git-commit: 41fb68ef566f5bd44d6f47f31de0b0edeeb978f2
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 + [릴리스 정보](release-notes.md)
 + [소개](introduction.md)
++ [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md)
 + [서비스 구성](configure-service.md)
 + [인쇄 양식을 적응형 양식으로 전환](convert-existing-forms-to-adaptive-forms.md)
 + [전환된 양식 검토 및 수정](review-correct-ui-edited.md)
@@ -22,6 +23,5 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 + [적응형 양식의 기록 문서 생성 활성화를 위한 권장 워크플로우](enable-document-of-record-generation.md)
 + [AEM 워크플로우를 사용하여 적응형 양식과 데이터베이스 통합](submit-converted-adaptive-form-to-database.md)
 + [FAQ](frequently-asked-questions.md)
-+ [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md)
 + [알려진 문제](known-issues.md)
 + [문제 해결](troubleshoot-afcs.md)
