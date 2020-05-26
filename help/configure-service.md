@@ -2,9 +2,9 @@
 title: 자동 양식 전환 서비스 구성
 description: 자동화된 양식 전환 서비스를 사용할 AEM 인스턴스 준비
 translation-type: tm+mt
-source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
+source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2531'
 ht-degree: 12%
 
 ---
@@ -183,7 +183,7 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
 
 자동화된 양식 전환 서비스를 사용하려면 프로젝트를 만들고 Adobe 개발자 콘솔의 프로젝트에 자동 양식 구성 서비스 API를 추가하십시오. 통합은 API 키, 클라이언트 암호, 페이로드(JWT)를 생성합니다.
 
-1. https://console.adobe.io/에 로그인합니다. 관리자가 Adobe I/O 콘솔에 로그인하여 사용할 수 있도록 프로비저닝한 개발자 계정인 Adobe ID를 사용하십시오.
+1. https://console.adobe.io/에 [로그인합니다](https://console.adobe.io/). 관리자가 Adobe I/O 콘솔에 로그인하여 사용할 수 있도록 프로비저닝한 개발자 계정인 Adobe ID를 사용하십시오.
 1. 오른쪽 상단 모서리에서 조직을 선택합니다. 조직을 모르는 경우에는 관리자에게 문의하십시오.
 1. 탭하기 **[!UICONTROL Create new project]**. 새 프로젝트를 시작하는 화면이 나타납니다. 탭하기 **[!UICONTROL Add API]**. 계정에 대해 활성화된 모든 API 목록이 있는 화면이 나타납니다.
 1. 선택하고 **[!UICONTROL Automated Forms Conversion service]** 누릅니다 **[!UICONTROL Next]**. API를 구성하는 화면이 나타납니다.
