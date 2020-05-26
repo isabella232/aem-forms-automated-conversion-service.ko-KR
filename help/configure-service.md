@@ -2,9 +2,9 @@
 title: 자동 양식 전환 서비스 구성
 description: 자동화된 양식 전환 서비스를 사용할 AEM 인스턴스 준비
 translation-type: tm+mt
-source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2528'
 ht-degree: 12%
 
 ---
@@ -123,7 +123,7 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
 * [이메일 알림 구성](configure-service.md#configureemailnotification)
 * [forms-users 그룹에 사용자 추가](#adduserstousergroup)
 * [공용 인증서 받기](#obtainpubliccertificates)
-* [Adobe I/O 통합 만들기](#createintegration)
+* [Adobe 개발자 콘솔에서 서비스 API 구성](#createintegration)
 * [클라우드 서비스 구성](configure-service.md#configure-the-cloud-service)
 
 #### 이메일 알림 구성 {#configureemailnotification}
@@ -159,12 +159,12 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
 
 1. 확인란을 **[!UICONTROL Create new certificate]** 선택하고 별칭을 지정합니다. 별칭은 대화 상자의 이름으로 사용됩니다. 탭하기 **[!UICONTROL Create certificate]**. 대화 상자가 나타납니다. 클릭 **[!UICONTROL OK]**. 인증서가 만들어집니다.
 
-1. 컴퓨터 **[!UICONTROL Download Public Key]** 에 *AEM-Adobe-IMS.crt* 인증서 파일을 누르고 저장합니다. The certificate file is used to [create integration on Adobe I/O Console](#createintegration). 탭하기 **[!UICONTROL Next]**.
+1. 컴퓨터 **[!UICONTROL Download Public Key]** 에 *AEM-Adobe-IMS.crt* 인증서 파일을 누르고 저장합니다. 인증서 파일은 Adobe 개발자 콘솔 [에서 서비스 API를 구성하는 데 사용됩니다](#createintegration). 탭하기 **[!UICONTROL Next]**.
 
 1. 다음을 지정합니다.
 
    * 제목: 제목을 지정합니다.
-   * 인증 서버: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+   * 인증 서버: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
    다른 필드는 비워 둡니다(나중에 제공). 페이지를 열어 두십시오.
 
    <!--
@@ -179,9 +179,9 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
    <li>Step text</li>
    -->
 
-#### Adobe I/O 통합 만들기 {#createintegration}
+#### Adobe 개발자 콘솔에서 서비스 API 구성 {#createintegration}
 
-자동화된 양식 변환 서비스를 사용하려면 Adobe I/O에서 통합을 만드십시오. 통합은 API 키, 클라이언트 암호, 페이로드(JWT)를 생성합니다.
+자동화된 양식 전환 서비스를 사용하려면 프로젝트를 만들고 Adobe 개발자 콘솔의 프로젝트에 자동 양식 구성 서비스 API를 추가하십시오. 통합은 API 키, 클라이언트 암호, 페이로드(JWT)를 생성합니다.
 
 1. https://console.adobe.io/에 로그인합니다. 관리자가 Adobe I/O 콘솔에 로그인하여 사용할 수 있도록 프로비저닝한 개발자 계정인 Adobe ID를 사용하십시오.
 1. 오른쪽 상단 모서리에서 조직을 선택합니다. 조직을 모르는 경우에는 관리자에게 문의하십시오.
@@ -203,8 +203,6 @@ Adobe에서 조직에 대한 액세스를 활성화하고 관리자에게 필요
    >페이로드에 대해 Adobe 개발자 콘솔의 서비스 계정(JWT) 페이지의 JWT 생성 탭에 제공된 코드를 사용합니다.
 
 1. 탭하기 **[!UICONTROL Save]**. IMS 구성이 생성됩니다.
-
-   ![페이로드 필드에 JWT 필드 값 사용](assets/jwt.png)
 
    >[!CAUTION]
    >
