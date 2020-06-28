@@ -1,16 +1,16 @@
 ---
 title: 'PDF 양식을 적응형 양식으로 전환 '
 seo-title: 'PDF 양식을 적응형 양식으로 전환 '
-description: 자동화된 양식 변환 서비스를 실행하여 PDF 양식을 적응형 양식으로 변환
-seo-description: 자동화된 양식 변환 서비스를 실행하여 PDF 양식을 적응형 양식으로 변환
+description: 자동화된 양식 변환 서비스를 실행하여 PDF forms을 적응형 양식으로 변환
+seo-description: 자동화된 양식 변환 서비스를 실행하여 PDF forms을 적응형 양식으로 변환
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
+source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1480'
 ht-degree: 8%
 
 ---
@@ -18,27 +18,27 @@ ht-degree: 8%
 
 # PDF 양식을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
-Adobe Sensei 기반의 AEM Forms 자동 양식 변환 서비스는 PDF 양식을 장치 친화적인 적응형 양식으로 자동 변환합니다. 비대화형 PDF 양식, Acro Forms 또는 XFA 기반 PDF 양식을 사용하는 경우 자동화된 양식 변환 서비스는 이러한 양식을 적응형 양식으로 손쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 [자동화된 양식 전환](introduction.md) 서비스를 참조하십시오.
+Adobe Sensei 기반의 AEM Forms 자동 양식 변환 서비스를 사용하면 PDF forms을 디바이스용 반응형 적응형 양식으로 자동으로 변환할 수 있습니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용하는 경우 자동화된 양식 변환 서비스는 이러한 양식을 적응형 양식으로 손쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 [자동화된 양식 전환](introduction.md) 서비스를 참조하십시오.
 
 ## 전제 조건 {#pre-requisites}
 
 * [**전환 서비스 구성&#x200B;**](configure-service.md)
 
-* **변환된 양식에 적용할[템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다.
+* **변환된 양식에 적용할[템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대해 [ **[!UIC찾아보기 구성]** 제어] 옵션을 선택합니다.
 
 * **변환된 양식에 적용할[테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
 ## 전환 프로세스 시작 {#start-the-conversion-process}
 
-AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행하십시오.
+AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행하십시오.
 
-* [AEM Forms 서버에 PDF 양식 업로드](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [AEM Forms 서버에 PDF forms 업로드](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [전환 실행](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [변환된 양식 검토 및 수정](review-correct-ui-edited.md)
 
-### AEM Forms 서버에 PDF 양식 업로드 {#upload-pdf-forms-to-your-aem-forms-server}
+### AEM Forms 서버에 PDF forms 업로드 {#upload-pdf-forms-to-your-aem-forms-server}
 
-전환 서비스는 AEM Forms 인스턴스에서 사용할 수 있는 PDF 양식을 적응형 양식으로 변환합니다. 필요에 따라 모든 PDF 양식을 한 번에 또는 단계별로 업로드할 수 있습니다. 양식을 업로드하기 전에 다음을 고려하십시오.
+전환 서비스는 AEM Forms 인스턴스에서 사용 가능한 PDF forms을 적응형 양식으로 변환합니다. 필요에 따라 한 번에 또는 단계별로 모든 PDF forms을 업로드할 수 있습니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
 * 폴더의 양식 수를 15개 미만으로 유지하고 폴더의 총 페이지 수를 50개 미만으로 유지합니다.
 * 폴더 크기를 10MB 이하로 유지합니다. 양식을 하위 폴더에 보관하지 마십시오.
@@ -61,8 +61,8 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
 양식을 업로드하고 서비스를 구성한 후 다음 단계를 수행하여 변환을 시작합니다.
 
-1. AEM Forms 인스턴스에서 **[!UICONTROL Adobe Experience Manager]** 전환 설정 대화 상자 ![>](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png)**[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**&#x200B;를탭합니다.
-1. 양식 또는 PDF 양식(변환할 양식)이 포함된 폴더를 선택하고 을 누릅니다 **[!UICONTROL Start Automated Conversion]**. 대화 상자가 **[!UICONTROL Conversion Settings]** 나타납니다.
+1. AEM Forms 인스턴스에서 [ **[!UICONTROL Adobe Experience Manager]** 전환 설정] 대화 상자 ![>](assets/adobeexperiencemanager.png) **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**&#x200B;를 누릅니다.
+1. 양식이나 PDF forms(변환할 양식)이 포함된 폴더를 선택하고 을 누릅니다 **[!UICONTROL Start Automated Conversion]**. 대화 상자가 **[!UICONTROL Conversion Settings]** 나타납니다.
 
    ![구성 지정](assets/conversion-settings-dialog.png)
 
@@ -84,12 +84,12 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
 1. [전환 설정] 대화 상자의 **[!UICONTROL Additional]** 탭에서
    * 전환 서비스에서 변환된 양식의 양식 조각을 식별, 추출 및 다운로드할 수 있도록 하려면 이 **[!UICONTROL Extract fragment from adaptive forms]** 옵션을 선택합니다. 이 **[!UICONTROL Extract fragment from adaptive forms]** 옵션을 선택하면 추출된 양식 조각 및 해당 양식 조각 스키마를 저장할 경로를 지정하는 옵션이 활성화됩니다.
-   * 기존 JSON 스키마 기반 및 스키마 덜 적응형 양식 조각이 있는 경우 **[!UICONTROL existing adaptive form fragments]**&#x200B;의 위치를 지정하고 이러한 조각을 자동으로 생성된 적응형 양식으로 사용할 계획입니다. 전환 서비스는 입력 PDF 양식(비대화형 PDF Forms만 해당)을 사용하여 사용 가능한 JSON 스키마 기반 및 스키마 없는 적응형 양식 조각과 일치하며 일치하는 적응형 양식 조각을 해당 적응형 양식에 사용합니다.
+   * 기존 JSON 스키마 기반 및 스키마 덜 적응형 양식 조각이 있는 경우 **[!UICONTROL existing adaptive form fragments]**&#x200B;의 위치를 지정하고 이러한 조각을 자동으로 생성된 적응형 양식으로 사용할 계획입니다. 전환 서비스는 입력 PDF forms(비대화형 PDF forms만 해당)을 사용하는 사용 가능한 JSON 스키마 기반 및 스키마 없는 적응형 양식 조각과 일치하며 일치하는 일치하는 적응형 양식 조각을 해당 적응형 양식에 사용합니다.
    >[!NOTE]
    >
    >
    > * 한 번에 **[!UICONTROL  Extract Fragment]** 또는 **[!UICONTROL Use existing adaptive form fragments]** 옵션만 사용할 수 있습니다. 두 옵션을 동시에 사용할 수는 없습니다.
-   > * 비대화형 PDF 양식에서만 이 **[!UICONTROL Use existing adaptive form fragments]** 옵션을 사용할 수 있습니다. 다른 양식 유형은 아직 지원되지 않습니다.
+   > * 비대화형 PDF forms에서만 **[!UICONTROL Use existing adaptive form fragments]** 옵션을 사용할 수 있습니다. 다른 양식 유형은 아직 지원되지 않습니다.
    > * 자동화된 전환 서비스를 사용하면 언바운드 조각 또는 JSON 스키마에 바인딩된 조각만 사용할 수 있습니다. XFA 조각을 사용하지 마십시오. XFA 조각은 지원되지 않습니다.
 
 
@@ -105,7 +105,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
    * 성공적으로 변환하면 변환된 응용 양식 및 관련 스키마가 전환 대화 상자의 **[!UICONTROL Basic]** 탭에 지정된 경로로 다운로드됩니다. 양식 조각 및 해당 스키마는 변환을 시작하기 전에 조각 추출 옵션을 선택한 경우에만 다운로드됩니다.
    * 변환 실패 시 일부 입력 양식만 변환되지 않으면 모든 입력 양식이 변환되지 않거나 메시지 **[!UICONTROL Conversion Failed]** **[!UICONTROL Partially Failed]** 가 표시되는 경우 메시지가 표시됩니다. 상태 이메일은 [구성된 이메일 주소로](configure-service.md#configureemailnotification) 전송되며 error.log 파일에 오류가 기록됩니다.
-   XFA 기반 PDF 양식을 적응형 양식으로 변환하는 경우 변환 서비스는 PDF 양식을 변환한 적응형 양식으로 자동 연결하여 문서 템플릿으로 사용합니다. 전환 후 적응형 양식 속성을 열어 탭의 **[!UICONTROL Document of Record Template Configuration]** 섹션에서 기록 문서를 볼 수 **[!UICONTROL Form Model]** 있습니다. </br>
+   XFA 기반 PDF 양식을 적응형 양식으로 변환하는 경우 변환 서비스는 PDF 양식을 변환한 적응형 양식에 레코드 문서 템플릿으로 자동으로 연결합니다. 전환 후 적응형 양식 속성을 열어 탭의 **[!UICONTROL Document of Record Template Configuration]** 섹션에서 기록 문서를 볼 수 **[!UICONTROL Form Model]** 있습니다. </br>
 
    전환 서비스는 **[!UICONTROL Tools]** > > > > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** 옵션 **[!UICONTROL Generate Document of Record]** 을 활성화한 경우에만 변환된 적응형 양식으로 PDF 양식을 자동으로 업로드합니다.
 
@@ -136,4 +136,4 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
 ## Review and correct the converted forms {#review-and-correct-the-converted-forms}
 
-실제 양식에는 복잡한 데이터 캡처 요구 사항이 있습니다. 자동 전환이 완료되면 고객은 양식의 전환 품질을 검토하고 필요한 사항을 업데이트할 수 있습니다. AEM Forms에서는 필요한 사항을 변경할 수 있는 [검토 및 올바른](review-correct-ui-edited.md) 편집기를 제공합니다. 이 기능을 사용하면 양식 필드에 대한 자동 식별 기능을 개선하고, 식별된 필드를 한 유형에서 다른 유형으로 변환할 수 있습니다. 예를 들어 양식의 두 열 레이아웃을 식별하고 라디오 단추로 자동 식별되는 필드를 여러 선택 항목 필드로 변경하는 데 도움이 됩니다.
+실제 양식에는 복잡한 데이터 캡처 요구 사항이 있습니다. 자동 전환이 완료되면 고객은 양식의 전환 품질을 검토하고 필요한 사항을 업데이트할 수 있습니다. AEM Forms은 필요한 변경 작업을 수행하는 [검토 및 올바른](review-correct-ui-edited.md) 편집기를 제공합니다. 이 기능을 사용하면 양식 필드에 대한 자동 식별 기능을 개선하고, 식별된 필드를 한 유형에서 다른 유형으로 변환할 수 있습니다. 예를 들어 양식의 두 열 레이아웃을 식별하고 라디오 단추로 자동 식별되는 필드를 여러 선택 항목 필드로 변경하는 데 도움이 됩니다.
