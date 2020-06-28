@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ AEM Forms 자동 양식 변환 서비스를 사용하기 전에 다음의 알려
    * XFA 기반 양식에 대해 반복 가능한 패널을 지원하지 않습니다.
    * 검토 및 수정 편집기를 사용하여 표의 목록을 수정하는 경우 행 너비가 자동으로 조정되지 않고 텍스트가 표의 다음 행으로 번질 수 있습니다.
    * 이 기능은 검토 및 수정 편집기와 양식 조각에서 작동하지 **[!UICONTROL Auto-detect multi-column layout from input forms]** 않습니다.
-   * 리뷰 및 교정 편집기로 만든 문지르기 서명이 게시된 적응형 양식으로 로드되지 않았습니다. 사용자는 이러한 문지가능 서명 구성 요소를 사용하여 적응형 양식에 서명할 수 없습니다.
+   * [검토 및 수정] 편집기로 만든 문지르기 서명이 게시된 적응형 양식에 대해 로드되지 않습니다.
 
 
 * XFA 기반 양식의 경우:
