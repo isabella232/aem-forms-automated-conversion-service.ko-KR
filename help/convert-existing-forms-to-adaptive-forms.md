@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1477'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ Adobe Sensei 기반의 AEM Forms 자동 양식 변환 서비스를 사용하면 
 
 * [**전환 서비스 구성&#x200B;**](configure-service.md)
 
-* **변환된 양식에 적용할[템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대해 [ **[!UIC찾아보기 구성]** 제어] 옵션을 선택합니다.
+* **변환된 양식에 적용할[템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 양식 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택합니다.
 
 * **변환된 양식에 적용할[테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
