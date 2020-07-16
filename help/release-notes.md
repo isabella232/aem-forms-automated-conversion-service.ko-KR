@@ -2,9 +2,9 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
+source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '326'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 94%
 
 ### 개선 사항
 
-텍스트, 양식 및 선택 그룹 필드를 해당 적응형 양식 구성 요소로 자동 변환하는 기능이 향상되었습니다.
+해당 적응형 양식 구성 요소로 텍스트, 양식 및 선택 그룹 필드의 자동 변환 기능이 개선되었습니다.
 
 ## 2020년 3월 20일(AFC-2020.03.1)
 
