@@ -46,7 +46,7 @@ ht-degree: 92%
 
 ### 특별 지침
 
-**자동화된 양식 변환 서비스 커넥터 패키지 설치**
+**자동화된 Forms 변환 서비스 커넥터 패키지 설치**
 
 AFC-2020.03.1 릴리스에서 제공되는 최신 기능 및 개선 사항을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다. 해당 커넥터 패키지는 [AEM 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)에서 다운로드할 수 있습니다.
 
