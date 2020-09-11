@@ -10,9 +10,9 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: 356eb083b889a1bf151c32bc5f01a6d263b96274
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
@@ -20,26 +20,13 @@ ht-degree: 3%
 
 # [우수 사례] 및 고려 사항 게시 안 함 {#do-not-publish-best-practices-and-considerations}
 
-AEM Forms 자동 변환 서비스는 PDF 양식을 적응형 양식으로 변환합니다. 이 서비스는 인공 지능과 머신 러닝 알고리즘을 사용하여 소스 양식의 레이아웃과 필드를 파악합니다. 모든 머신 러닝 서비스는 소스 데이터를 지속적으로 학습하고 모든 이탈률을 바탕으로 향상된 출력을 제작합니다. 이러한 서비스는 인간처럼 경험으로부터 배운다.
+AEM Forms 자동 변환 서비스는 PDF 양식을 적응형 양식으로 변환하고 이 서비스는 인공 지능과 머신 러닝 알고리즘을 사용하여 소스 양식의 레이아웃과 필드를 파악합니다. 모든 머신 러닝 서비스는 소스 데이터를 지속적으로 학습하고 모든 이탈률을 바탕으로 향상된 출력을 제작합니다. 이러한 서비스는 인간처럼 경험으로부터 배운다.
 
-자동화된 양식 전환 서비스는 다양한 양식에 대해 교육됩니다. 소스 양식의 필드를 손쉽게 식별하고 적응형 양식을 만듭니다. 그러나 PDF forms에는 사람의 눈에는 쉽게 보일 수 있지만 서비스를 이해하기 어려운 분야와 스타일이 있다. 서비스는 일부 필드 또는 스타일에 적용 가능한 필드 유형이나 패널과 다르게 지정할 수 있습니다. 이러한 모든 필드 및 스타일 패턴은 아래에 나열되어 있습니다.
+자동화된 Forms 전환 서비스는 다양한 형태로 교육됩니다. 소스 양식의 필드를 손쉽게 식별하고 적응형 양식을 만듭니다. 그러나 PDF forms에는 사람의 눈에는 쉽게 보일 수 있지만 서비스를 이해하기 어려운 분야와 스타일이 있다. 서비스는 일부 필드 또는 스타일에 적용 가능한 필드 유형이나 패널과 다르게 지정할 수 있습니다. 이러한 모든 필드 및 스타일 패턴은 아래에 나열되어 있습니다.
 
 서비스는 소스 데이터를 계속 학습하면서 이러한 패턴에 올바른 필드나 패널을 식별하고 지정하기 시작합니다. 당분간 검토 및 수정 [편집기를 사용하여](review-correct-ui-edited.md) 이러한 문제를 수정할 수 있습니다. 문제를 수정하거나 더 자세히 읽기 전에 [적응형 양식 구성 요소에 익숙해지십시오](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
 ## 일반 {#general}
-
-<!--
-Comment Type: draft
-
-<ul>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.Service does not convert colored PDF forms to adaptive form. Use  and white or grayscale adaptive forms. <br /> </li>
-<li>Service does not convert filled PDF forms to adaptive form. Use empty adaptive forms.</li>
-<li>Service does not support scanned forms. Do not use scanned forms. </li>
-<li>Service can fail to recognize text and fields in a dense form. Increase the width between text and fields of a dense form before starting the conversion.</li>
-<li>Service does not extract images. Manually add images to converted forms.</li>
-<li>Service does not extract text present within an image. Manually add text to the adaptive form.</li>
-</ul>
--->
 
 <table border="1" cellpadding="1" cellspacing="0" style="border-collapse: separate; border-spacing: 0px;" width="100%"> 
  <tbody>
@@ -47,11 +34,6 @@ Comment Type: draft
    <td width="30%">알려진 패턴 및 해상도</td> 
    <td width="70%">예</td> 
   </tr>
-  <tr>
-   <td><p><strong>패턴</strong></p> <p>서비스는 컬러 PDF forms을 응용 양식으로 변환하지 않습니다.</p> <p> </p> <p><strong>해상도</strong></p> <p>흑백 또는 회색 음영 PDF forms 사용 </p> </td> 
-   <td style="text-align: left;"> <img src="assets/coloured-form.png" /></td> 
-  </tr>
-  <tr>
    <td><p><strong>패턴</strong></p> <p>서비스가 채워진 PDF forms을 응용 양식으로 변환하지 않습니다.</p> <p> </p> <p><strong>해상도</strong></p> <p>빈 적응형 양식을 사용합니다.</p> </td> 
    <td style="text-align: left;"><img src="assets/pre-filled-form.png" /></td> 
   </tr>
