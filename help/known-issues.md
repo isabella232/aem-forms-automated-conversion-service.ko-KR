@@ -1,22 +1,22 @@
 ---
 title: 알려진 문제
 seo-title: 알려진 문제
-description: 자동화된 양식 변환 서비스의 알려진 문제 및 제한 사항
-seo-description: AEM Forms 자동 양식 변환 서비스를 사용하기 전에 서비스의 알려진 문제와 제한 사항에 대해 알아보십시오
+description: 자동화된 Forms 전환 서비스에 대한 알려진 문제 및 제한 사항
+seo-description: AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 서비스의 알려진 문제와 제한 사항에 대해 알아보십시오
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
 
 # 알려진 문제 및 제한 사항 {#known-issues-limitations}
 
-AEM Forms 자동 양식 변환 서비스를 사용하기 전에 다음의 알려진 문제와 제한 사항을 검토하십시오.
+AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 알려진 문제와 제한 사항을 검토하십시오.
 
 ## 알려진 문제 {#known-issues}
 
@@ -69,12 +69,12 @@ AEM Forms 자동 양식 변환 서비스를 사용하기 전에 다음의 알려
 
 ## 제한 사항 {#limitations}
 
-* 복잡한 동적 레이아웃이 있는 PDF forms, 점선 외곽선, 채우기 필드 또는 색상 필드는 지원되지 않습니다.
+* 복잡한 동적 레이아웃이 있는 PDF forms, 점선 외곽선 또는 채워진 필드가 지원되지 않습니다.
 * 이미지 내의 이미지와 텍스트는 식별되지 않습니다. 변환된 양식에 수동으로 이미지 추가
 * 아트워크 XDP 문서는 지원되지 않습니다.
 * 15페이지가 넘는 PDF forms은 지원되지 않습니다.
 * 암호화되고 암호로 보호되며 보안 문서는 변환되지 않습니다. 변환을 실행하기 전에 암호화 또는 암호를 제거합니다.
-* 테두리 없는 표, 중첩된 표, 색상이 있는 표 및 자리 표시자 값이 있는 표와 같은 복잡한 표는 지원되지 않습니다. 적응형 양식 편집기를 사용하여 변환 후 복잡한 표를 추가하거나 수정할 수 있습니다. 빈 필드, 적절한 헤더 및 명확한 경계와 함께 단순 테이블만 지원됩니다.
+* 자리 표시자 값이 있는 표, 중첩된 표 및 같은 복잡한 표는 지원되지 않습니다. 적응형 양식 편집기를 사용하여 변환 후 복잡한 표를 추가하거나 수정할 수 있습니다. 빈 필드, 적절한 헤더 및 명확한 경계와 함께 단순 테이블만 지원됩니다.
 * 이 서비스는 영어 양식만 응용 양식으로 변환합니다. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* AEM 6.4 양식은 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
+* AEM 6.4 Forms은 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
 
