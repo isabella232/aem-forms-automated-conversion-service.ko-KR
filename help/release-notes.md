@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bf14583de678ef963b0f2084c3da4624c9304b30
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 88%
+source-wordcount: '338'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 
 ### 새로운 기능
 
-이제 이 서비스를 사용하여 컬러 PDF 양식을 적응형 양식으로 변환할 수도 있습니다.
+컬러 PDF 양식을 적응형 양식으로 변환하는 지원이 추가되었습니다.
 
 ### 개선 사항
 
