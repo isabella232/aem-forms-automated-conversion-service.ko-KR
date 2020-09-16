@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 89%
 
 ### 개선 사항
 
-해당 적응형 양식 구성 요소로 텍스트, 양식 및 선택 그룹 필드의 자동 변환 기능이 개선되었습니다.
+텍스트, 양식 및 선택 그룹 필드를 해당 적응형 양식 구성 요소로 자동 변환하는 기능이 향상되었습니다.
 
 
 ## 2020년 3월 20일(AFC-2020.03.1)
@@ -51,7 +51,7 @@ ht-degree: 89%
 
 ### 특별 지침
 
-**자동화된 Forms 변환 서비스 커넥터 패키지 설치**
+**자동 양식 전환 서비스 커넥터 패키지 설치**
 
 AFC-2020.03.1 릴리스에서 제공되는 최신 기능 및 개선 사항을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다. 해당 커넥터 패키지는 [AEM 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)에서 다운로드할 수 있습니다.
 
