@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 ### 새로운 기능
 
-컬러 PDF forms을 적응형 양식으로 변환하는 지원을 추가했습니다.
+색상이 적용된 PDF forms를 적응형 양식으로 전환하는 기능이 추가되었습니다.
 
 ### 개선 사항
 
