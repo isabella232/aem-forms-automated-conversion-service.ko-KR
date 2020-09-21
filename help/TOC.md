@@ -3,20 +3,20 @@ cloud: experience-cloud
 product: experience manager
 sub-product: 양식 전환 서비스
 audience: end-user
-user-guide-title: Adobe Experience Manager 자동 양식 전환 서비스
+user-guide-title: Adobe Experience Manager Forms 자동 전환 서비스
 user-guide-description: Speed up the conversion of print forms to adaptive forms.
 breadcrumb-title: Forms Automated Conversion Guide
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 09f609f3a634e33270b94bd09da50f08d0ea0a6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '77'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Experience Manager 자동 양식 전환 서비스 {#using}
+# Adobe Experience Manager Forms 자동 전환 서비스 {#using}
 
 + [릴리스 정보](release-notes.md)
 + [소개](introduction.md)
