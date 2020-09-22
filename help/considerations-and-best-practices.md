@@ -1,6 +1,5 @@
 ---
-title: '[게시 안 함] 우수 사례 및 고려 사항 '
-seo-title: '[게시 안 함] 우수 사례 및 고려 사항 '
+title: '모범 사례 및 고려 사항 '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -10,15 +9,19 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '542'
+ht-degree: 5%
 
 ---
 
 
-# [우수 사례] 및 고려 사항 게시 안 함 {#do-not-publish-best-practices-and-considerations}
+# 모범 사례 및 고려 사항 {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
 AEM Forms 자동 변환 서비스는 PDF 양식을 적응형 양식으로 변환하고 이 서비스는 인공 지능과 머신 러닝 알고리즘을 사용하여 소스 양식의 레이아웃과 필드를 파악합니다. 모든 머신 러닝 서비스는 소스 데이터를 지속적으로 학습하고 모든 이탈률을 바탕으로 향상된 출력을 제작합니다. 이러한 서비스는 인간처럼 경험으로부터 배운다.
 
