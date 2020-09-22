@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1822'
 ht-degree: 4%
 
 ---
@@ -132,4 +132,11 @@ ht-degree: 4%
    <br/>
 
 1. **적응형 양식 텍스트의 대소문자를 자동으로 변경하는 방법**
+
    <p>테마 또는 스타일 편집기에서 적응형 양식을 사용하여 적응형 양식 필드의 대소문자를 변경할 수 있습니다. 예를 들어 테마 편집기를 열고 양식의 모든 텍스트에 대한 Case 속성 값을 대문자, 소문자 또는 camelCase로 설정할 수 있습니다. 테마 편집기의 CSS 재정의 옵션을 사용하여 다양한 유형의 스타일을 만들 수도 있습니다.</p>
+
+1. **자동화된 Forms 전환 서비스에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
+
+   <p> 자동화된 Forms 전환 서비스를 사용하여 PDF 양식을 적응형 양식으로 변환하고 PDF 양식에 Adobe Sign 텍스트 태그가 있는 경우 이러한 태그는 해당 적응형 양식 필드로 변환되고 서명자 세부 정보가 자동으로 채워집니다.  이 기능은 Acro Forms에서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.</p>  </br>
+
+   <p> 지원되는 태그의 전체 목록을 보려면 적응형 양식 편집기에서 양식을 열고 Adobe Sign 블록을 추가하십시오. 지원되는 모든 Adobe Sign 필드를 찾으려면 Adobe Sign 블록을 사용하십시오. 지원되는 모든 필드를 선택하는 드롭다운이 제공됩니다.</p>
