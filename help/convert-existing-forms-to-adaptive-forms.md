@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1585'
 ht-degree: 7%
 
 ---
@@ -30,12 +30,12 @@ Adobe Sensei에서 제공하는 AEM Forms 자동화된 Forms 전환 서비스는
 
 * **소스 PDF 문서에 Adobe Sign 텍스트 태그 추가:** 소스 PDF 양식에 [Adobe Sign 텍스트 태그가](https://helpx.adobe.com/sign/using/text-tag.html)있는 경우 서비스는 자동으로 이러한 태그를 해당 적응형 양식 필드로 변환하고 서명자 세부 정보가 자동으로 채워집니다. 이 기능은 AcroForms에서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.
 
-
-   지원되는 태그의 전체 목록을 보려면 적응형 양식 편집기에서 양식을 열고 Adobe Sign 블록을 추가하십시오. 지원되는 모든 Adobe Sign 필드를 찾으려면 Adobe Sign 블록을 사용하십시오. 지원되는 모든 필드를 선택하는 드롭다운이 제공됩니다.
+   </br>
+    적응형 양식은 오직, 서명, 텍스트, 번호, 날짜, 드롭다운, 라디오 버튼, 확인란, 초기, 서명 블록, 디지털 서명, 서명자의 제목, 서명자의 이메일, 서명자의 회사, 서명 날짜 및 서명자의 전체 이름 Adobe Sign 필드만 지원합니다. 따라서 서비스는 전술된 필드만 있는 텍스트 태그를 해당 적응형 양식 필드로 변환합니다.
 
 ## 전환 프로세스 시작 {#start-the-conversion-process}
 
-AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행하십시오.
+AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행합니다.
 
 * [AEM Forms 서버에 PDF forms 업로드](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [전환 실행](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
