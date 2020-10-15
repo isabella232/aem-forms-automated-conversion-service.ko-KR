@@ -2,7 +2,7 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
+source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 기본적으로 이 서비스를 통해 PDF 양식의 각 페이지마다 별도의 최상위 패널을 만들 수 있습니다. 이제 **[!UICONTROL Auto-detect logical sections]** 옵션을 사용하여 페이지 레벨 패널(페이지 번호 기반 패널)을 삭제하고 논리 패널만 만들 수 있습니다. 또한 이전 논리 섹션이 포함된 어떤 섹션에도 속하지 않는 필드와 두 장의 인접한 페이지에 걸쳐 있는 논리 섹션의 필드를 단일 논리 섹션으로 병합할 수 있습니다. 예를 들어, 논리 섹션의 일부 필드가 1페이지의 끝에 있고 일부는 2페이지의 시작에 있는 경우 그러한 모든 필드는 단일 논리 섹션으로 병합됩니다.
 
-### 개선 사항
+### 개선 사항 {#improvements}
 
 **목록 검색 개선**
 
