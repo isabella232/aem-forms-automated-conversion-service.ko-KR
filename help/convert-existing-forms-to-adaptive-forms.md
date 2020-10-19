@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1599'
 ht-degree: 7%
 
 ---
@@ -24,18 +24,19 @@ Adobe Sensei에서 제공하는 AEM Forms 자동화된 Forms 전환 서비스는
 
 * [**전환 서비스 구성**](configure-service.md)
 
-* **변환된 양식에 적용할[템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 Forms 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택합니다.
+* **변환된 양식에 적용할 [템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) 준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 자동화된 Forms 변환 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택합니다.
 
-* **변환된 양식에 적용할[테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
+* **변환된 양식에 적용할 [테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) 준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
-* **소스 PDF 문서에 Adobe Sign 텍스트 태그 추가:** 소스 PDF 양식에 [Adobe Sign 텍스트 태그가](https://helpx.adobe.com/sign/using/text-tag.html)있는 경우 서비스는 자동으로 이러한 태그를 해당 적응형 양식 필드로 변환하고 서명자 세부 정보가 자동으로 채워집니다. 이 기능은 AcroForms에서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.
+* **소스 PDF 문서에 Adobe Sign 텍스트 태그 추가:** 소스 PDF 양식에 [Adobe Sign 텍스트 태그가](https://helpx.adobe.com/sign/using/text-tag.html)있는 경우 변환 과정에서 모든 서명자 관련 정보가 유지됩니다. 생성된 적응형 양식이 모든 서명자 세부 사항을 채우고 적응형 양식을 Adobe Sign 서비스로 보내 서명을 합니다. 이 기능은 AcroForms에서만 사용할 수 있으며 적응형 양식 속성은 AcroForm 속성에 정확하게 정렬됩니다.
 
-   </br>
-    적응형 양식은 오직, 서명, 텍스트, 번호, 날짜, 드롭다운, 라디오 버튼, 확인란, 초기, 서명 블록, 디지털 서명, 서명자의 제목, 서명자의 이메일, 서명자의 회사, 서명 날짜 및 서명자의 전체 이름 Adobe Sign 필드만 지원합니다. 따라서 서비스는 전술된 필드만 있는 텍스트 태그를 해당 적응형 양식 필드로 변환합니다.
+   원본 PDF 문서에 Adobe Sign 텍스트 태그를 추가하려면 원본 PDF 문서의 필드 이름을 [텍스트 태그로](https://helpx.adobe.com/sign/using/text-tag.html) 바꾸거나 Acrobat DC를 사용하여 양식 [만들기 문서에 설명된 대로 Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) 양식으로변환을 사용하십시오.
+
+
 
 ## 전환 프로세스 시작 {#start-the-conversion-process}
 
-AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행합니다.
+AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적응형 양식으로 변환할 수 있습니다. 양식을 변환하려면 나열된 순서대로 다음 단계를 수행하십시오.
 
 * [AEM Forms 서버에 PDF forms 업로드](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [전환 실행](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
