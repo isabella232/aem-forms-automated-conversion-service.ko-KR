@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 773dae94d4e65b72de3518ebf5be4350db34fbb0
+source-git-commit: 1c4eb103b1d3b40ead4137f05e6af01d581365e5
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1616'
 ht-degree: 7%
 
 ---
@@ -28,10 +28,8 @@ Adobe Sensei에서 제공하는 AEM Forms 자동화된 Forms 전환 서비스는
 
 * **변환된 양식에 적용할 [테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) 준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
-* **소스 PDF 문서에 Adobe Sign 텍스트 태그 추가:** 소스 PDF 양식에 [Adobe Sign 텍스트 태그가](https://helpx.adobe.com/sign/using/text-tag.html)있는 경우 변환 동안 모든 Adobe Sign 관련 정보가 유지됩니다. 생성된 적응형 양식의 서명자 정보는 해당 적응형 양식 필드와 관련된 서명자 정보를 그대로 유지하면서 서명을 위해 Adobe Sign 서비스로 양식을 전송할 수 있습니다. 이 기능은 AcroForms에서만 사용할 수 있으며 적응형 양식 속성은 AcroForm 속성에 정확하게 정렬됩니다.
-
+* **소스 PDF 문서에 Adobe Sign 텍스트 태그 추가:** 소스 PDF 양식에 [Adobe Sign 텍스트 태그가](https://helpx.adobe.com/sign/using/text-tag.html)있는 경우 변환 동안 모든 Adobe Sign 관련 정보가 유지됩니다. 생성된 적응형 양식은 AcroForm에 있는 서명자 정보를 적응형 양식 필드와 연결하며, 적응형 양식을 서명을 위해 Adobe 서명 서비스로 전송하는 동안 데이터를 그대로 유지할 수 있습니다. 이 기능은 AcroForms에서만 사용할 수 있으며 적응형 양식 속성이 AcroForm 속성에 정확하게 정렬됩니다 <br>\
    원본 PDF 문서에 Adobe Sign 텍스트 태그를 추가하려면 원본 PDF 문서의 필드 이름을 [텍스트 태그로](https://helpx.adobe.com/sign/using/text-tag.html) 바꾸거나 Acrobat DC를 사용하여 양식 [만들기 문서에 설명된 대로 Adobe Sign](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) 양식으로변환을 사용하십시오.
-
 
 
 ## 전환 프로세스 시작 {#start-the-conversion-process}
