@@ -1,8 +1,11 @@
 ---
 title: 소개
 description: '인쇄 양식을 적응형 양식으로 신속하게 전환 '
-translation-type: ht
-source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
+translation-type: tm+mt
+source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +31,8 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 ## 지원되는 PDF 양식 및 언어 {#supported-languages-and-pdf-forms}
 
 이 서비스는 비대화형 PDF 양식, AcroForms로 알려진 Adobe Acrobat으로 만든 양식, AEM Forms 또는 Adobe LiveCycle을 사용하여 만든 XFA 기반 양식을 지원합니다.
+
+이 서비스는 Adobe Sign이 활성화된 PDF forms을 지원합니다. 소스 PDF 양식에 Adobe Sign 텍스트 태그가 있는 경우, 서비스는 변환 중 모든 Adobe Sign 관련 정보를 보존하고 소스 PDF에 있는 서명자 정보와 해당 적응형 양식 필드를 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
 이 서비스는 영어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.
 
