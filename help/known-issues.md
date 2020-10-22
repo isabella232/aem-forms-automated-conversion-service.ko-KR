@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '808'
 ht-degree: 1%
 
 ---
@@ -77,4 +77,7 @@ AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 �
 * 자리 표시자 값이 있는 표, 중첩된 표 및 같은 복잡한 표는 지원되지 않습니다. 적응형 양식 편집기를 사용하여 변환 후 복잡한 표를 추가하거나 수정할 수 있습니다. 빈 필드, 적절한 헤더 및 명확한 경계와 함께 단순 테이블만 지원됩니다.
 * 이 서비스는 영어 양식만 응용 양식으로 변환합니다. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms은 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
+* 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 전달되지 않습니다.
+* 소스 PDF 양식의 색상은 적응형 양식 테마에 적용됩니다.
+* 컬러 PDF forms은 그레이스케일 양식으로 처리되고 그에 따라 필드가 검색됩니다.
 
