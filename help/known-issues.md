@@ -7,9 +7,9 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '809'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,6 @@ AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 �
 * 이 서비스는 영어 양식만 응용 양식으로 변환합니다. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms은 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
 * 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 전달되지 않습니다.
-* 소스 PDF 양식의 색상은 적응형 양식 테마에 적용됩니다.
+* 소스 PDF 양식의 색상은 적응형 양식 테마에 전달되지 않습니다.
 * 컬러 PDF forms은 그레이스케일 양식으로 처리되고 그에 따라 필드가 검색됩니다.
 
