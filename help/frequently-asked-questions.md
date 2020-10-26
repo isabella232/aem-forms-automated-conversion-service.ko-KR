@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1825'
 ht-degree: 4%
 
 ---
@@ -138,8 +138,6 @@ ht-degree: 4%
 1. **자동화된 Forms 전환 서비스에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
 
    <p> 자동화된 Forms 전환 서비스를 사용하여 PDF 양식을 적응형 양식으로 변환하고 PDF 양식에 Adobe Sign 텍스트 태그가 있는 경우 이러한 태그는 해당 적응형 양식 필드로 변환되고 서명자 세부 정보가 자동으로 채워집니다.  이 기능은 Acro Forms에서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.</p>  </br>
-
-   <p> 지원되는 태그의 전체 목록을 보려면 적응형 양식 편집기에서 양식을 열고 Adobe Sign 블록을 추가하십시오. 지원되는 모든 Adobe Sign 필드를 찾으려면 Adobe Sign 블록을 사용하십시오. 지원되는 모든 필드를 선택하는 드롭다운이 제공됩니다.</p>
 
 1. **Adobe Sign 사용 PDF 양식을 만드는 방법**
 
