@@ -1,9 +1,9 @@
 ---
 title: 소개
 description: '인쇄 양식을 적응형 양식으로 신속하게 전환 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
