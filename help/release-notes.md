@@ -1,9 +1,9 @@
 ---
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
 
