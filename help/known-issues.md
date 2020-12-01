@@ -1,8 +1,8 @@
 ---
 title: 알려진 문제
 seo-title: 알려진 문제
-description: 자동화된 Forms 전환 서비스에 대한 알려진 문제 및 제한 사항
-seo-description: AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 서비스의 알려진 문제와 제한 사항에 대해 알아보십시오
+description: automated forms conversion 서비스에 대한 알려진 문제 및 제한 사항
+seo-description: AEM Forms Automated forms conversion 서비스를 사용하기 전에 서비스의 알려진 문제 및 제한 사항에 대해 알아보십시오
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
@@ -16,18 +16,18 @@ ht-degree: 1%
 
 # 알려진 문제 및 제한 사항 {#known-issues-limitations}
 
-AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 알려진 문제와 제한 사항을 검토하십시오.
+AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 다음의 알려진 문제와 제한 사항을 검토하십시오.
 
 ## 알려진 문제 {#known-issues}
 
 * 변환할 양식이 들어 있는 폴더에는 총 15개의 양식과 50페이지를 초과할 수 없습니다. 소스 폴더 크기는 10MB를 초과할 수 없습니다. 소스 폴더에 하위 폴더를 만들지 마십시오.
-* 어떤 형태의 물체는 사람의 눈에 쉽게 보일 수 있지만 서비스를 위해 식별하기 [어렵습니다](styles-and-pattern-considerations-and-best-practices.md). 검토 [및 수정 편집기를](review-correct-ui-edited.md) 사용하여 이러한 양식 객체를 식별하고 변환합니다.
+* 일부 양식 개체는 사람의 눈에 쉽게 보이기는 하지만 [서비스](styles-and-pattern-considerations-and-best-practices.md)에 대해 식별하기 어렵습니다. [검토 및 수정 편집기](review-correct-ui-edited.md)를 사용하여 이러한 양식 개체를 식별하고 변환합니다.
 * 리뷰 및 수정 편집기:
 
    * 실행 취소 작업이 없습니다. 저장 단추를 누르면 변경 사항이 영구적으로 저장됩니다.
    * XFA 기반 양식에 대해 반복 가능한 패널을 지원하지 않습니다.
    * 검토 및 수정 편집기를 사용하여 표의 목록을 수정하는 경우 행 너비가 자동으로 조정되지 않고 텍스트가 표의 다음 행으로 번질 수 있습니다.
-   * 이 기능은 검토 및 수정 편집기와 양식 조각에서 작동하지 **[!UICONTROL Auto-detect multi-column layout from input forms]** 않습니다.
+   * **[!UICONTROL Auto-detect multi-column layout from input forms]** 기능은 검토 및 수정 편집기와 양식 조각에서 작동하지 않습니다.
    * [검토 및 수정] 편집기로 만든 문지르기 서명이 게시된 적응형 양식에 대해 로드되지 않습니다.
 
 
@@ -36,9 +36,9 @@ AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 �
    * XFA 스크립트는 지원되지 않습니다. 예를 들어 드롭다운 구성 요소에 대한 값을 자동으로 생성하는 스크립트입니다.
    * 메타 모델이 선택 그룹에 대해 작동하지 않습니다.
    * 단일 문자가 있는 선택 그룹 옵션이 식별되지 않음
-   * 소스 문서가 동적 XFA(.XDP)이고 응용 형식으로 XFA 속성의 동작을 [정의하면 소스 문서의 존재](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)속성이 적용되지 않습니다. 예를 들어, 소스 문서의 필드는 숨김으로 표시되고 스크립트로 필드를 표시하면 필드가 출력 응용 양식에 계속 표시됩니다.
+   * 소스 문서가 동적 XFA(.XDP)이고 이 문서 [가 적응형 양식](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)에서 XFA 속성의 동작을 정의하면 소스 문서의 존재 속성이 적용되지 않습니다. 예를 들어, 소스 문서의 필드는 숨김으로 표시되고 스크립트로 필드를 표시하면 필드가 출력 응용 양식에 계속 표시됩니다.
 
-* 생성된 적응형 양식 **에 대해 입력 AcroForm을 기록 문서로 사용(DoR) 옵션을 사용하는 경우 다음을 고려하십시오** .
+* 생성된 적응형 양식&#x200B;**옵션에 대해**&#x200B;입력 AcroForm을 기록 문서로 사용(DoR) 옵션을 사용하는 경우 다음을 고려하십시오.
 
 <table>
     <tr>
@@ -75,7 +75,7 @@ AEM Forms 자동화된 Forms 전환 서비스를 사용하기 전에 다음의 �
 * 15페이지가 넘는 PDF forms은 지원되지 않습니다.
 * 암호화되고 암호로 보호되며 보안 문서는 변환되지 않습니다. 변환을 실행하기 전에 암호화 또는 암호를 제거합니다.
 * 자리 표시자 값이 있는 표, 중첩된 표 및 같은 복잡한 표는 지원되지 않습니다. 적응형 양식 편집기를 사용하여 변환 후 복잡한 표를 추가하거나 수정할 수 있습니다. 빈 필드, 적절한 헤더 및 명확한 경계와 함께 단순 테이블만 지원됩니다.
-* 이 서비스는 영어 양식만 응용 양식으로 변환합니다. You can translate converted adaptive forms to another language using [AEM translation workflow](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* 이 서비스는 영어 양식만 응용 양식으로 변환합니다. 변환된 적응형 양식을 [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 다른 언어로 번역할 수 있습니다.
 * AEM 6.4 Forms은 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
 * 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 전달되지 않습니다.
 * 소스 PDF 양식의 색상은 적응형 양식 테마에 전달되지 않습니다.
