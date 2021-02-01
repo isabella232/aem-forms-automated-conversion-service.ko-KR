@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
+source-git-commit: 923fee97428b8063f6a973b90eb91fdb25e5dd12
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 100%
+source-wordcount: '353'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,10 @@ ht-degree: 100%
 * 특별 지침
 * 향후 변경 계획
 
+
+## 2021년 2월 1일 (AFC-2021.01)
+
+양식 필드를 패널로 구성하고 패널의 제목을 생성하는 작업 시 성능이 개선되었습니다.
 
 ## 2020년 7월 16일 (AFC-2020.07.0)
 
