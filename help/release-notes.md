@@ -2,7 +2,7 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: 3fa3f484268c7cbe655408f90d53ae8d28b3a7ee
+source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 93%
@@ -23,8 +23,7 @@ ht-degree: 93%
 * 특별 지침
 * 향후 변경 계획
 
-
-## 2021년 2월 1일 (AFC-2021.01.2)
+## 2021년 2월 2일 (AFC-2021.01.2)
 
 ### 개선 사항
 
