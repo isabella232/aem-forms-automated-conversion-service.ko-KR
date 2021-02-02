@@ -2,9 +2,9 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: '자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보 '
 translation-type: tm+mt
-source-git-commit: 176dfbf12d1147d0348957e2cc8ce9390529fe72
+source-git-commit: 3fa3f484268c7cbe655408f90d53ae8d28b3a7ee
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 93%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 93%
 
 
 ## 2021년 2월 1일 (AFC-2021.01.2)
+
+### 개선 사항
 
 소스 양식을 적응형 양식으로 변환하는 동안 양식 컨텐츠를 패널로 구성하고 패널의 제목을 생성하는 기능이 개선되었습니다.
 
