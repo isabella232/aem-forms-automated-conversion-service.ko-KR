@@ -3,7 +3,7 @@ cloud: experience-cloud
 product: experience manager
 sub-product: 양식 전환 서비스
 solution: Experience Manager, Experience Manager Forms
-type: Documentation
+type: 설명서
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms 자동 전환 서비스
 user-guide-description: PDF Forms를 반응형 및 모바일용 HTML Forms로 전환할 수 있습니다.
@@ -12,7 +12,7 @@ breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.
 translation-type: tm+mt
 source-git-commit: ab178dd8d1786c6c341d4a1a3da0aecebead31dd
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '91'
 ht-degree: 100%
 
 ---
