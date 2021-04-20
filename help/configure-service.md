@@ -1,7 +1,7 @@
 ---
 title: 자동 양식 전환 서비스 구성
 description: automated forms conversion 서비스를 사용할 AEM 인스턴스 준비
-role: 비즈니스 전문가, 관리자
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: tm+mt
