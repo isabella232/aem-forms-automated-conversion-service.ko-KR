@@ -24,9 +24,9 @@ Adobe Sensei 기반의 AEM Forms Automated forms conversion 서비스는 PDF for
 
 * [**전환 서비스 구성**](configure-service.md)
 
-* **변환된  [](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) 양식에 적용할 템플릿 준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 Automated forms conversion 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하고 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대해 **[!UICONTROL Browse configurations]** 옵션을 선택합니다.
+* **변환된  [&#128279;](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) 양식에 적용할 템플릿 준비:** 템플릿을 사용하면 모든 적응형 양식에 일관성 있는 브랜딩을 적용할 수 있습니다. 또한 Automated forms conversion 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하고 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿의 폴더를 만들 때 모든 사용자에 대해 **[!UICONTROL Browse configurations]** 옵션을 선택합니다.
 
-* **변환된  [](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) 양식에 적용할 테마 준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
+* **변환된  [&#128279;](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) 양식에 적용할 테마 준비:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
 * **(선택 사항)** [**소스 PDF forms을 Adobe Sign 양식으로 변환**](frequently-asked-questions.md)
 
