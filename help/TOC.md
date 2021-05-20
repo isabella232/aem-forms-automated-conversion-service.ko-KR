@@ -9,12 +9,11 @@ user-guide-title: Adobe Experience Manager Forms 자동 전환 서비스
 user-guide-description: PDF Forms를 반응형 및 모바일용 HTML Forms로 전환할 수 있습니다.
 breadcrumb-title: Forms 자동 전환 안내서
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Adaptive Forms
+feature: 적응형 양식
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '92'
 ht-degree: 100%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 100%
 # Adobe Experience Manager Forms 자동 전환 서비스 {#using}
 
 + [소개](introduction.md)
-+ [릴리스 정보](release-notes.md)
++ [릴리스 노트](release-notes.md)
 + [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md)
 + [서비스 구성](configure-service.md)
 + [인쇄 양식을 적응형 양식으로 전환](convert-existing-forms-to-adaptive-forms.md)
