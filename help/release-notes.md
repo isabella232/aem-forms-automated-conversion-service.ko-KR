@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: 자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 88%
+source-wordcount: '409'
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 88%
 * 사용하지 않는 기능
 * 특별 지침
 * 향후 변경 계획
+
+## 2021년 6월 24일 (AFC-2021.06.2) {#june-2021}
+
+### 개선 사항 {#june-2021-improvements}
+
+소스 양식에서 논리 섹션을 자동으로 감지하여 해당 적응형 양식 패널로 변환하는 정확도를 개선했습니다.
 
 ## 2021년 3월 3일 (AFC-2021.02.2) {#mar-2021}
 
@@ -59,7 +65,7 @@ ht-degree: 88%
 
 이제 보다 효과적으로 글머리 기호 및 번호 매기기 목록을 검색할 수 있습니다.
 
-### 특별 지침  {#special-instructions}
+### 특별 지침 {#special-instructions}
 
 **자동 양식 전환 서비스 커넥터 패키지 설치**
 
