@@ -3,7 +3,7 @@ title: 자동 양식 전환 서비스 구성
 description: automated forms conversion 서비스를 사용할 AEM 인스턴스 준비
 role: Business Practitioner, Administrator
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
 source-wordcount: '2670'
 ht-degree: 9%
@@ -147,7 +147,7 @@ automated forms conversion 서비스는 일 CQ 메일 서비스를 사용하여 
 
 #### forms-users 그룹에 사용자 추가 {#adduserstousergroup}
 
-서비스를 실행하도록 지정된 AEM 사용자의 프로필에 이메일 주소를 지정합니다. 사용자가 [forms user](https://helpx.adobe.com/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) 그룹의 구성원인지 확인합니다. 이메일은 전환을 실행하는 사용자의 이메일 주소로 전송됩니다. 사용자의 이메일 주소를 지정하고 사용자를 Forms 사용자 그룹에 추가하려면 다음을 수행합니다.
+서비스를 실행하도록 지정된 AEM 사용자의 프로필에 이메일 주소를 지정합니다. 사용자가 [forms user](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) 그룹의 구성원인지 확인합니다. 이메일은 전환을 실행하는 사용자의 이메일 주소로 전송됩니다. 사용자의 이메일 주소를 지정하고 사용자를 Forms 사용자 그룹에 추가하려면 다음을 수행합니다.
 
 1. AEM 관리자로 AEM Forms 작성자 인스턴스에 로그인합니다. 로그인하려면 로컬 AEM 자격 증명을 사용합니다. Adobe ID을 사용하여 로그인하지 마십시오. **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**&#x200B;를 누릅니다.
 
@@ -223,7 +223,7 @@ automated forms conversion 서비스를 사용하려면 프로젝트를 만들�
 
    <br/> <br/>
 
-#### Cloud Service {#configure-the-cloud-service} 구성
+#### Cloud Service 구성 {#configure-the-cloud-service}
 
 AEM 인스턴스를 전환 서비스에 연결하는 Cloud Service 구성을 만듭니다. 또한 변환에 사용할 템플릿, 테마 및 양식 조각을 지정할 수 있습니다. 각 양식 세트에 대해 별도로 여러 클라우드 서비스 구성을 만들 수 있습니다. 예를 들어, 영업 부서 양식에 대해 별도의 구성과 고객 지원 양식에 대해 별도의 구성이 있을 수 있습니다. 클라우드 서비스 구성을 만들려면 다음 단계를 수행하십시오.
 
