@@ -1,9 +1,9 @@
 ---
 title: 자동 양식 전환 서비스 구성
 description: automated forms conversion 서비스를 사용할 AEM 인스턴스 준비
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
+source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
 workflow-type: tm+mt
 source-wordcount: '2670'
 ht-degree: 9%
@@ -89,11 +89,11 @@ The connector package provides early access to the [Auto-detect logical sections
 
 서비스를 구성하고 로컬 인스턴스를 Adobe 클라우드에서 실행되는 서비스와 연결하기 전에 서비스에 연결하는 데 필요한 개인 및 권한에 대해 알아봅니다. 이 서비스는 다음과 같은 두 가지 유형의 개인, 관리자 및 개발자를 사용합니다.
 
-* **관리자**:관리자는 조직의 Adobe 소프트웨어 및 서비스를 관리할 책임이 있습니다. 관리자는 조직의 개발자에게 Adobe Cloud에서 실행되는 Automated forms conversion 서비스에 연결할 수 있는 액세스 권한을 부여합니다. 조직에 대해 관리자가 프로비저닝되면 관리자는 **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']** 제목이 있는 이메일을 받게 됩니다. 관리자의 경우, 사서함에서 이전에 언급된 제목이 있는 이메일을 확인하고 [조직 개발자에게 액세스 권한 부여](#adduseranddevs)를 진행하십시오.
+* **관리자**: 관리자는 조직의 Adobe 소프트웨어 및 서비스를 관리할 책임이 있습니다. 관리자는 조직의 개발자에게 Adobe Cloud에서 실행되는 Automated forms conversion 서비스에 연결할 수 있는 액세스 권한을 부여합니다. 조직에 대해 관리자가 프로비저닝되면 관리자는 **[!UICONTROL 'You now have administrator rights to manage Adobe software and services for your organization']** 제목이 있는 이메일을 받게 됩니다. 관리자의 경우, 사서함에서 이전에 언급된 제목이 있는 이메일을 확인하고 [조직 개발자에게 액세스 권한 부여](#adduseranddevs)를 진행하십시오.
 
 ![관리자 액세스 권한 부여 이메일](assets/admin-console-adobe-io-access-grantedx75.png)
 
-* **개발자**:개발자는 로컬 AEM Forms 작성자 인스턴스를 Adobe 클라우드에서 실행되는 Automated forms conversion 서비스에 연결합니다. 관리자가 개발자에게 Automated forms conversion 서비스에 연결할 수 있는 권한을 부여하면, 이제 조직에 대한 Adobe API 통합을 관리할 개발자 액세스 권한이 있는 이메일이 개발자에게 전송됩니다. 개발자인 경우 사서함에서 이전에 언급된 제목이 있는 이메일을 확인하고 [Adobe Cloud의 Automated forms conversion 서비스에 로컬 AEM 인스턴스를 연결합니다.](#connectafcadobeio)
+* **개발자**: 개발자는 로컬 AEM Forms 작성자 인스턴스를 Adobe 클라우드에서 실행되는 Automated forms conversion 서비스에 연결합니다. 관리자가 개발자에게 Automated forms conversion 서비스에 연결할 수 있는 권한을 부여하면, 이제 조직에 대한 Adobe API 통합을 관리할 개발자 액세스 권한이 있는 이메일이 개발자에게 전송됩니다. 개발자인 경우 사서함에서 이전에 언급된 제목이 있는 이메일을 확인하고 [Adobe Cloud의 Automated forms conversion 서비스에 로컬 AEM 인스턴스를 연결합니다.](#connectafcadobeio)
 
 ![개발자 액세스 권한 부여 이메일](assets/email-developer-accessx94.png)
 
@@ -171,8 +171,8 @@ automated forms conversion 서비스는 일 CQ 메일 서비스를 사용하여 
 
 1. 아래에 을(를) 지정합니다.
 
-   * 제목:제목을 지정합니다.
-   * 인증 서버:[https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
+   * 제목: 제목을 지정합니다.
+   * 인증 서버: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
 
    다른 필드는 비워 둡니다(나중에 제공). 페이지를 열어 두십시오.
 
