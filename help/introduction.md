@@ -2,10 +2,10 @@
 title: 소개
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 75%
+source-wordcount: '690'
+ht-degree: 71%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 75%
 * 일반적으로 발생하는 필드를 재사용 가능한 양식 단편으로 그룹화
 * 전환 중 Adobe Analytics 사용
 
-![간단합니다. 소스 양식을 제공하고 모든 것을 Adobe에 남깁니다. 멋진 적응형 양식을 제공합니다. 원하는 대로 결과물을 수정하실 수 있습니다.](assets/pdf-to-adaptive-form-gitx50.gif)
+![간단합니다. 소스 양식을 제공하고 모든 것을 Adobe에 남깁니다. 멋진 적응형 양식을 제공합니다. 원하는 대로 결과물을 수정하실 수 있습니다. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## 온보딩 {#onboarding}
 
@@ -33,7 +33,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 이 서비스는 Adobe Sign이 활성화된 PDF forms도 지원합니다. 소스 PDF form에 Adobe Sign 텍스트 태그가 포함된 경우 서비스는 전환 중에 모든 Adobe Sign 관련 정보를 유지하고 소스 PDF의 서명자 정보를 해당 적응형 양식 필드와 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
-이 서비스는 영어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.
+이 서비스는 영어, 프랑스어, 독일어 및 스페인어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
 
 ## 전환 워크플로우  {#conversion-workflow}
 
