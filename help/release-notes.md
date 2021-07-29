@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: 자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 84%
+source-wordcount: '426'
+ht-degree: 80%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 84%
 * 사용하지 않는 기능
 * 특별 지침
 * 향후 변경 계획
+
+## 2021년 7월 29일 (AFC-2021.07.2) {#july-2021}
+
+* 프랑스어, 독일어 및 스페인어 PDF forms을 적응형 양식으로 변환하는 기능이 추가되었습니다.
 
 ## 2021년 6월 24일 (AFC-2021.06.2) {#june-2021}
 
