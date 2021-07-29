@@ -3,9 +3,9 @@ title: 자동 양식 전환 서비스 구성
 description: automated forms conversion 서비스를 사용할 AEM 인스턴스 준비
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
+source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2682'
 ht-degree: 9%
 
 ---
@@ -241,9 +241,7 @@ AEM 인스턴스를 전환 서비스에 연결하는 Cloud Service 구성을 만
    | 템플릿 | 변환된 양식에 적용할 기본 템플릿입니다. 변환을 시작하기 전에 항상 다른 템플릿을 지정할 수 있습니다. 템플릿에는 적응형 양식에 대한 기본 구조와 초기 컨텐츠가 포함되어 있습니다. 기본 제공 템플릿에서 템플릿을 선택할 수 있습니다. 사용자 지정 템플릿을 만들 수도 있습니다. |
    | 테마 | 변환된 양식에 적용할 기본 테마입니다. 전환을 시작하기 전에 항상 다른 테마를 지정할 수 있습니다.  아이콘을 클릭하여 즉시 제공되는 테마를 선택할 수 있습니다. 사용자 지정 테마를 만들 수도 있습니다. |
    | 기존 조각 | 기존 조각의 위치(있는 경우). |
-   | 사용자 지정 메타 모델 | 사용자 지정 메타 모델의 .schema.json 파일 경로입니다. |
-
-
+   | 사용자 지정 메타 모델 | 사용자 지정 메타 모델의 .schema.json 파일 경로입니다. 영어, 프랑스어, 독일어 및 스페인어 언어에 대해 별도의 메타 모델을 만들 수 있습니다. |
 
 1. **[!UICONTROL Create Automated Forms Conversion Configuration]** 페이지의 **[!UICONTROL Advanced]** 탭에서 다음 필드에 대한 값을 지정합니다.
 
