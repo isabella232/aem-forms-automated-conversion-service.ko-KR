@@ -7,9 +7,9 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2569'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ automated forms conversion 서비스는 소스 양식에서 양식 개체를 식
 
 ## 기본 메타 모델 {#default-meta-model}
 
-automated forms conversion 서비스에는 기본 메타 모델이 있습니다. JSON 스키마이며 Automated forms conversion 서비스의 다른 구성 요소와 함께 Adobe Cloud에 있습니다. 로컬 AEM 서버에서 메타 모델의 사본을 찾을 수 있는 위치:http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json [여기](assets/global.schema.json)를 클릭하여 기본 스키마에 액세스하거나 다운로드할 수도 있습니다.
+automated forms conversion 서비스에는 기본 메타 모델이 있습니다. JSON 스키마이며 Automated forms conversion 서비스의 다른 구성 요소와 함께 Adobe Cloud에 있습니다. 로컬 AEM 서버에서 메타 모델의 사본을 찾을 수 있는 위치: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json` [여기](assets/en.globalschema.json)를 클릭하여 영어 스키마에 액세스하거나 다운로드할 수도 있습니다. [프랑스어](assets/fr.globalschema.json), [독일어](assets/de.globalschema.json) 및 [스페인어](assets/es.globalschema.json) 언어용 메타 모델도 다운로드할 수 있습니다.
 
 메타 모델의 스키마가 https://schema.org/docs/schemas.html의 스키마 엔티티에서 파생됩니다. 여기에는 개인, PostalAddress, LocalBusiness 및 https://schema.org에 정의된 더 많은 엔티티가 있습니다. 메타 모델의 모든 엔티티는 JSON 스키마 개체 유형을 준수합니다. 다음 코드는 샘플 메타 모델 구조를 나타냅니다.
 
@@ -44,7 +44,7 @@ automated forms conversion 서비스에는 기본 메타 모델이 있습니다.
     }
 ```
 
-## 기본 메타 모델 {#download-the-default-meta-model} 다운로드
+## 기본 메타 모델 다운로드 {#download-the-default-meta-model}
 
 다음 단계를 수행하여 기본 메타 모델을 로컬 파일 시스템에 다운로드합니다.
 
@@ -64,7 +64,7 @@ automated forms conversion 서비스에는 기본 메타 모델이 있습니다.
    <li>Step text</li>
    -->
 
-## 메타 모델 {#understanding-the-meta-model} 이해
+## 메타 모델 이해 {#understanding-the-meta-model}
 
 메타 모델은 엔티티가 포함된 JSON 스키마 파일을 참조합니다. JSON 스키마 파일의 모든 엔티티에는 이름과 ID가 포함됩니다. 각 엔티티는 여러 속성을 포함할 수 있습니다. 엔티티와 해당 속성은 도메인에 따라 다를 수 있습니다. 키워드 및 필드 구성을 사용하여 스키마 파일을 확장하여 스키마 속성을 적응형 양식 구성 요소에 매핑할 수 있습니다.
 
@@ -140,19 +140,19 @@ automated forms conversion 서비스에는 기본 메타 모델이 있습니다.
    <td> 
     <p>유형 속성은 생성된 적응형 양식 필드에 대한 데이터 유형을 정의합니다. 제목 속성에 사용할 수 있는 값은 다음과 같습니다.</p>
     <ul> 
-     <li>문자열:텍스트 데이터 유형의 적응형 양식 필드를 생성합니다.</li> 
-     <li>번호:숫자 데이터 유형의 적응형 양식 필드를 생성합니다.</li>
-     <li>정수:하위 유형이 정수로 설정된 숫자 데이터 유형의 적응형 양식 필드를 생성합니다.</li>
-     <li>부울:스위치 적응형 양식 구성 요소를 생성합니다.</li>
+     <li>문자열: 텍스트 데이터 유형의 적응형 양식 필드를 생성합니다.</li> 
+     <li>번호: 숫자 데이터 유형의 적응형 양식 필드를 생성합니다.</li>
+     <li>정수: 하위 유형이 정수로 설정된 숫자 데이터 유형의 적응형 양식 필드를 생성합니다.</li>
+     <li>부울: 스위치 적응형 양식 구성 요소를 생성합니다.</li>
      </ul><p>메타 모델에서 type 속성을 사용하는 방법에 대한 자세한 내용은 <strong>사용자 지정 메타 모델 예에서 양식 필드</strong> 유형을 수정합니다.</a><a href="#custommetamodelexamples"></a></p></td> 
   </tr>
   <td><p>패턴</p></td> 
    <td> 
-    <p>패턴 속성은 정규 표현식을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 예를 들어 메타 모델의 다음 코드는 생성된 적응형 양식 필드의 값을 10자리(<br>"pattern")로 제한합니다."/\\d{10}/"<br>마찬가지로, 메타 모델의 다음 코드는 필드의 값을 특정 날짜 형식으로 제한합니다.<br> "pattern":"date{DD MMMM, YYYY}",</p> </td> 
+    <p>패턴 속성은 정규 표현식을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 예를 들어 메타 모델의 다음 코드는 생성된 적응형 양식 필드의 값을 10자리(<br>"pattern")로 제한합니다. "/\\d{10}/"<br>마찬가지로, 메타 모델의 다음 코드는 필드의 값을 특정 날짜 형식으로 제한합니다.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
   </tr>
   <td><p>포맷</p></td> 
    <td> 
-    <p>형식 속성은 정규 표현식 대신 명명된 패턴을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 형식 속성에 사용할 수 있는 값은 다음과 같습니다.<ul><li>이메일:전자 메일 적응형 양식 구성 요소를 생성합니다.</li><li>호스트:텍스트 상자 적응형 양식 구성 요소를 생성합니다.</li></ul>메타 모델에서 format 속성을 사용하는 방법에 대한 자세한 내용은 <strong>사용자 지정 메타 모델 예에서 양식 필드</strong>의 형식을 수정합니다.</a><a href="#custommetamodelexamples"></a></p> </td> 
+    <p>형식 속성은 정규 표현식 대신 명명된 패턴을 기반으로 생성된 적응형 양식 필드의 값을 제한합니다. 형식 속성에 사용할 수 있는 값은 다음과 같습니다.<ul><li>이메일: 전자 메일 적응형 양식 구성 요소를 생성합니다.</li><li>호스트: 텍스트 상자 적응형 양식 구성 요소를 생성합니다.</li></ul>메타 모델에서 format 속성을 사용하는 방법에 대한 자세한 내용은 <strong>사용자 지정 메타 모델 예에서 양식 필드</strong>의 형식을 수정합니다.</a><a href="#custommetamodelexamples"></a></p> </td> 
   </tr>
   <td><p>enum 및 enumNames</p></td> 
    <td> 
@@ -214,7 +214,46 @@ automated forms conversion 서비스는 전환 중에 소스 양식에서 키워
  </tbody> 
 </table>
 
-## 사용자 지정 메타 모델 {#modify-adaptive-form-fields-using-custom-meta-model}을 사용하여 적응형 양식 필드를 수정합니다
+## 원하는 언어로 사용자 지정 메타데이터 만들기{#language-specific-meta-model}
+
+언어별 메타 모델을 만들 수 있습니다. 이러한 메타 모델은 선택한 언어로 매핑 규칙을 만드는 데 도움이 됩니다. automated forms conversion 서비스를 사용하면 다음 언어로 메타 모델을 만들 수 있습니다.
+
+* 영어(en)
+* 프랑스어(fr)
+* 독일어(de)
+* 스페인어()
+
+*aem:Language* 메타 태그 태그를 메타 모델 맨 위에 추가하여 해당 언어를 지정합니다. 예,
+
+```JSON
+"metaTags": {
+        "aem:Language": "de"
+    }
+```
+
+영어는 메타 모델의 기본 언어입니다.
+
+### 언어별 메타 모델 작성을 위한 고려 사항
+
+* 모든 키의 이름이 영어로 되어 있는지 확인합니다. 예를 들어 emailAddress가 있습니다.
+* 모든 *id* 키의 모든 엔티티 참조 및 사전 정의된 값이 영어로 되어 있는지 확인합니다. 예: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;엔티티&quot;.
+* 다음 키에 대한 메타 모델에 포함된 설명 또는 메시지가 메타 모델의 언어에 해당하는지 확인합니다.
+   * aem:affKeyword
+   * 제목
+   * 설명
+   * enumNames
+   * shortDescription
+   * validatePictureClauseMessage
+
+   예를 들어 메타 모델의 언어가 프랑스어(&quot;aem:Language&quot;)인 경우 &quot;fr&quot;)를 사용하려면 모든 설명 및 메시지가 프랑스어로 되어 있는지 확인하십시오.
+
+* 모든 [JSON 스키마 속성](#jsonschemaproperties)이 지원되는 값만 사용하도록 하십시오.
+
+다음 이미지는 영어 메타 모델과 해당 프랑스어 언어 메타 모델의 예를 표시합니다.
+
+![](assets/language-specific-meta-model-comparison.png)
+
+## 사용자 지정 메타 모델을 사용하여 적응형 양식 필드 수정 {#modify-adaptive-form-fields-using-custom-meta-model}
 
 조직에는 기본 메타 모델에 나열된 패턴 및 유효성 검사 외에도 패턴과 유효성 검사가 있을 수 있습니다. 기본 메타 모델을 확장하여 조직에 관련된 패턴, 검증 및 엔티티를 추가할 수 있습니다. automated forms conversion 서비스는 전환 중에 사용자 지정 메타 모델을 양식 필드에 적용합니다. 조직 고유의 패턴, 유효성 검사 및 엔티티가 검색되므로 메타 모델을 계속 업데이트할 수 있습니다.
 
@@ -250,7 +289,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 * 드롭다운 목록에 추가 옵션 추가
 * 문자열 필드를 여러 줄 필드로 변환
 
-#### 양식 필드 {#modify-the-label-of-a-form-field} 레이블을 수정합니다
+#### 양식 필드의 레이블을 수정합니다 {#modify-the-label-of-a-form-field}
 
 **예:** 양식의 은행 계좌 번호 레이블을 변환 후 적응형 양식의 사용자 지정 계정 번호로 수정합니다.
 
@@ -268,9 +307,9 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 양식 필드 {#modify-the-type-of-a-form-field} 유형을 수정합니다.
+#### 양식 필드의 유형 수정 {#modify-the-type-of-a-form-field}
 
-**예**:변환 후 적응형  **양식의** 숫자 유형 필드로 변환하기 전에 양식에서 텍스트 유형의 은행 계좌 번호 필드를 수정합니다.
+**예**: 변환 후 적응형  **양식의** 숫자 유형 필드로 변환하기 전에 양식에서 텍스트 유형의 은행 계좌 번호 필드를 수정합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **은행 계좌 번호** 텍스트를 검색한 후 변환 서비스는 **type** 속성을 사용하여 필드를 숫자 유형으로 변환합니다.
 
@@ -283,9 +322,9 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 양식 필드 {#add-help-text-to-a-form-field}에 도움말 텍스트 추가
+#### 양식 필드에 도움말 텍스트 추가 {#add-help-text-to-a-form-field}
 
-**예**:적응형 양식의  **은행** 계좌 번호 필드에 도움말 텍스트를 추가합니다.
+**예**: 적응형 양식의  **은행** 계좌 번호 필드에 도움말 텍스트를 추가합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **은행 계좌 번호** 텍스트를 검색한 후 변환 서비스는 **description** 속성을 사용하여 적응형 양식 필드에 도움말 텍스트를 추가합니다.
 
@@ -299,9 +338,9 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 적응형 양식 {#convert-a-form-field-to-multiple-choice-check-boxes-in-the-adaptive-form}에서 양식 필드를 다중 선택 확인란으로 변환합니다
+#### 적응형 양식의 양식 필드를 여러 선택 확인란으로 변환합니다 {#convert-a-form-field-to-multiple-choice-check-boxes-in-the-adaptive-form}
 
-**예**:변환 전 **** 에 양식의 문자열 유형의 국가 필드를 변환 후 적응형 양식의 확인란으로 변환합니다.
+**예**: 변환 전 **** 에 양식의 문자열 유형의 국가 필드를 변환 후 적응형 양식의 확인란으로 변환합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **Country** 텍스트를 검색한 후 변환 서비스는 **enum** 속성을 사용하여 필드를 다음 확인란으로 변환합니다.
 
@@ -333,9 +372,9 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 양식 필드 {#modify-the-format-of-a-form-field} 형식을 수정합니다.
+#### 양식 필드의 형식 수정 {#modify-the-format-of-a-form-field}
 
-**예**:이메일 주소  **필드의 형식** 을 이메일 형식으로 수정합니다.
+**예**: 이메일 주소  **필드의 형식** 을 이메일 형식으로 수정합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 변환 서비스는 양식에서 **이메일 주소** 텍스트를 검색한 후 **format** 속성을 사용하여 필드를 이메일 형식으로 변환합니다.
 
@@ -383,9 +422,9 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 텍스트 필드를 적응형 양식 {#convert-a-text-field-to-drop-down-list-in-the-adaptive-form}의 드롭다운 목록으로 변환
+#### 텍스트 필드를 적응형 양식의 드롭다운 목록으로 변환 {#convert-a-text-field-to-drop-down-list-in-the-adaptive-form}
 
-**예**:변환  **** 후 적응형 양식의 드롭다운 옵션으로 전환하기 전에 양식에서 문자열 유형의 국가 필드를 변환합니다.
+**예**: 변환  **** 후 적응형 양식의 드롭다운 옵션으로 전환하기 전에 양식에서 문자열 유형의 국가 필드를 변환합니다.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 **aem:affKeyword** 내의 텍스트를 검색 키워드로 사용합니다. 양식에서 **Country** 텍스트를 검색한 후 변환 서비스는 **enum** 속성을 사용하여 필드를 다음 드롭다운 목록 옵션으로 변환합니다.
 
@@ -445,7 +484,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 }
 ```
 
-#### 문자열 필드를 여러 줄 필드 {#convert-a-string-field-to-a-multi-line-field}로 변환
+#### 문자열 필드를 여러 줄 필드로 변환 {#convert-a-string-field-to-a-multi-line-field}
 
 **예:** 문자열  **** 유형의 주소 필드를 변환 후 양식의 여러 줄 필드로 변환합니다.
 
