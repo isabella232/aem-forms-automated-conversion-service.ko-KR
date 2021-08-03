@@ -7,9 +7,9 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
 workflow-type: tm+mt
-source-wordcount: '2569'
+source-wordcount: '2591'
 ht-degree: 1%
 
 ---
@@ -221,23 +221,23 @@ automated forms conversion 서비스는 전환 중에 소스 양식에서 키워
 * 영어(en)
 * 프랑스어(fr)
 * 독일어(de)
-* 스페인어()
+* 스페인어(es)
 
 *aem:Language* 메타 태그 태그를 메타 모델 맨 위에 추가하여 해당 언어를 지정합니다. 예,
 
 ```JSON
 "metaTags": {
-        "aem:Language": "de"
+        "aem:Language": "fr"
     }
 ```
 
-영어는 메타 모델의 기본 언어입니다.
+언어를 지정하지 않으면 이 서비스는 메타 모델이 영어로 되어 있다고 간주합니다.
 
 ### 언어별 메타 모델 작성을 위한 고려 사항
 
 * 모든 키의 이름이 영어로 되어 있는지 확인합니다. 예를 들어 emailAddress가 있습니다.
-* 모든 *id* 키의 모든 엔티티 참조 및 사전 정의된 값이 영어로 되어 있는지 확인합니다. 예: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;엔티티&quot;.
-* 다음 키에 대한 메타 모델에 포함된 설명 또는 메시지가 메타 모델의 언어에 해당하는지 확인합니다.
+* 모든 ID 키의 모든 엔티티 참조 및 사전 정의된 값이 ASCII 문자만 포함하는지 확인합니다. 예: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* 다음 키에 해당하는 모든 값이 지정된 메타 모델 언어로 되어 있는지 확인합니다.
    * aem:affKeyword
    * 제목
    * 설명
@@ -245,9 +245,9 @@ automated forms conversion 서비스는 전환 중에 소스 양식에서 키워
    * shortDescription
    * validatePictureClauseMessage
 
-   예를 들어 메타 모델의 언어가 프랑스어(&quot;aem:Language&quot;)인 경우 &quot;fr&quot;)를 사용하려면 모든 설명 및 메시지가 프랑스어로 되어 있는지 확인하십시오.
+   예를 들어 메타 모델의 언어가 프랑스어(&quot;aem:Language&quot;)인 경우 &quot;fr&quot;)에서 모든 설명 및 메시지가 프랑스어로 표시되는지 확인하십시오.
 
-* 모든 [JSON 스키마 속성](#jsonschemaproperties)이 지원되는 값만 사용하도록 하십시오.
+* 모든 [JSON 스키마 속성](#jsonschemaproperties)이 지원되는 값만 사용하도록 하십시오. 예를 들어 유형 속성은 String, Number, Integer 및 Boolean의 선택한 값만 확장할 수 있습니다.
 
 다음 이미지는 영어 메타 모델과 해당 프랑스어 언어 메타 모델의 예를 표시합니다.
 
