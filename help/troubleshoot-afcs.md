@@ -6,10 +6,10 @@ seo-description: 일반적인 AFCS 문제 및 해결 방법
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '661'
+ht-degree: 89%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 100%
 | **오류 메시지** <br> 스캔한 양식이 지원되지 않습니다.  <br><br>**원인** <br> PDF 양식에는 양식의 스캔한 이미지만 포함되어 있으며 콘텐츠 구조는 포함되어 있지 않습니다. <br><br>**해결 방법** <br> 이 서비스는 스캔한 양식이나 양식의 이미지를 즉시 사용 가능한 적응형 양식으로 전환하는 것을 지원하지 않습니다. 그러나 Adobe Acrobat을 사용하면 양식의 이미지를 PDF 양식으로 전환할 수 있습니다. 그런 다음 이 서비스를 사용하여 PDF 양식을 적응형 양식으로 전환합니다. Acrobat에서 전환하려면 항상 고품질 양식 이미지를 사용하십시오. 전환 품질이 향상됩니다. | ![서비스에 연결할 수 없습니다.](assets/scanned-forms-error.png) |
 | **오류 메시지**<br> 암호화된 PDF 양식은 지원되지 않습니다.  <br><br>**원인** <br> 폴더에 암호화된 PDF 양식이 포함되어 있습니다. <br><br>**해결 방법** <br> 이 서비스는 암호화된 PDF 양식을 적응형 양식으로 전환하는 것을 지원하지 않습니다. 암호화를 제거하고 암호화되지 않은 양식을 업로드하고 전환을 실행합니다. | ![서비스에 연결할 수 없습니다.](assets/secured-pdf-form.png) |
 | **오류 메시지** <br> 메타 모델 JSON 스키마를 구문 분석할 수 없습니다.  <br><br>**원인** <br> 이 서비스에 제공된 JSON 스키마 형식이 제대로 지정되지 않았거나, 잘못된 문자를 포함하거나, 구성 요소를 매핑하는 데 잘못된 구문을 사용합니다.  <br><br>**해결 방법** <br> JSON 파일의 형식을 확인합니다. 모든 온라인 JSON 유효성 검사기를 사용하여 스키마의 형식 및 구조를 확인할 수 있습니다. 메타 모델 구문에 대한 자세한 내용은 [기본 메타 모델 확장](extending-the-default-meta-model.md) 문서를 참조하십시오. | ![서비스에 연결할 수 없습니다.](assets/invalid-meta-model-schema.png) |
+| **오류(온-프레미스 환경만 해당)** <br>  **[!UICONTROL Source Language]** 옵션에는 적응형 양식의 올바른 언어가 나열되지 않습니다. <br><br>**** <br> 원인 적응형 양식의 jcr:language 속성이 올바르게 설정되지 않았습니다.  <br><br>**** <br> 해결 방법CRX-DE Lite를 열고,  `/content/forms/af/`로 이동하여 노드를 열고,  `jcr:content` 노드의 값을 올바른 언어로 설정합니다. 지원되는 언어 목록에 대해서는 [지원되지 않는 로케일에 대한 지역화 지원 추가](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales)를 참조하십시오. | ![서비스에 연결할 수 없습니다.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 
