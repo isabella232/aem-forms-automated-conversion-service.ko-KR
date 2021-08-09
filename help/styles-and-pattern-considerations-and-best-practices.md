@@ -7,9 +7,9 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
+source-git-commit: c070651253877408466231ab80a6b7e0d04a9fab
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1257'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 * 소스 문서를 8~15개의 문서로 일괄 구성합니다. 공통 적응형 양식 조각을 한 묶음으로 소스 양식을 유지합니다.
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 보안 양식을 전환하지 않습니다.
 * [PDF Portfolio](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)을 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
-* 스캔, 비영어 및 채워진 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
+* 스캔 및 채워진 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
 
 변환에 XDP 양식을 사용하는 경우 소스 XPD 양식을 업로드하기 전에 다음 단계를 수행하십시오.
