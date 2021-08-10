@@ -2,10 +2,10 @@
 title: 소개
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 71%
+source-wordcount: '699'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하려면 [PDF 양식을 AEM 인스턴스로 업로드](convert-existing-forms-to-adaptive-forms.md)하고 [전환을 시작](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)합니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
 * 보안 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 암호화된 양식을 전환하지 않습니다.
-* 스캔, 컬러, 영어 이외의 언어 및 채워진 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
+* 스캔, 컬러, 채워진 양식 및 양식을 영어, 프랑스어, 독일어 및 스페인어 이외의 다른 언어로 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 PDF 양식을 업로드하지 마십시오.
 * [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 문서에 설명된 제안 변경 사항을 PDF 양식에 적용하십시오.
