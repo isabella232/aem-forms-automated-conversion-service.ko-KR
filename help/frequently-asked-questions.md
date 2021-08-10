@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '1825'
-ht-degree: 4%
+source-wordcount: '1830'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 4%
    <p>이 서비스는 비대화형 PDF forms, XFA 기반 XDP 및 PDF forms, AcroForms를 적응형 양식으로 전환할 수 있습니다. 서비스가 검사되었거나 채워진 양식을 지원하지 않습니다. 다른 제한 사항에 대해서는 <a href="known-issues.md">알려진 문제</a> 문서를 참조하십시오.<br /> </p> 
     <p>다른 소스 유형에 대한 지원을 정기적으로 추가하고 있습니다. 새로 추가된 기능 및 기능에 대한 정기적인 업데이트를 보려면 감시 목록에서 <a href="introduction.md">supportedPDF forms</a> 섹션을 유지합니다.</p>
 
-   이 서비스는 영어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   이 서비스는 영어, 프랑스어, 독일어 및 스페인어 언어만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **이 서비스에서 적응형 양식 대신 XDP를 생성할 수 있습니까?**
 
@@ -79,7 +79,7 @@ ht-degree: 4%
    * 서비스가 잘못 구성되었거나, 서비스 URL이 제공되지 않았거나, 제공된 서비스 URL이 잘못되었습니다. **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**&#x200B;에서 [서비스 구성](configure-service.md#configure-the-cloud-service)을 확인하십시오.
    * IMS 구성이 제대로 구성되지 않았습니다. IMS 구성이 제대로 작동하는지 확인하려면 IMS 구성에서 상태 확인을 수행하십시오. IMS 구성이 올바른지 확인하려면:
       1. 다음으로 이동:`http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]** 을 클릭하고 **[!UICONTROL Check]** 를 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]** 메시지가 나타납니다.<br> <br>
+      2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]** 을 클릭하고 **[!UICONTROL Check]** 를 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]** 메시지가 나타납니다. <br> <br>
 
 1. **사용자 지정 글꼴을 사용하면 변환에 영향을 줍니까?**
 
@@ -101,7 +101,7 @@ ht-degree: 4%
 
 1. **일부 수정 사항은 여러 양식에 걸쳐 반복됩니다. 이 서비스는 향후 전환에서 이러한 모든 인스턴스를 식별하고 수정할 수 있습니까?**
 
-   서비스는 양식 및 패턴에 대한 교육을 일관되게 제공합니다. 매일 새로운 패턴을 학습합니다. 양식 전체에서 반복된 자동 적용 수정 사항을 아직 시작하지 않습니다. 이러한 기능을 사용할 수 있는지 시험판 양식을 확인하십시오.<br/><br/>
+   서비스는 양식 및 패턴에 대한 교육을 일관되게 제공합니다. 매일 새로운 패턴을 학습합니다. 양식 전체에서 반복된 자동 적용 수정 사항을 아직 시작하지 않습니다. 이러한 기능을 사용할 수 있는지 시험판 양식을 확인하십시오. <br/><br/>
 
    메타 모델을 사용하여 양식 개체를 선택한 적응형 양식 구성 요소에 매핑하고, 구성 요소에 대한 유효성 검사, 규칙, 데이터 패턴, 도움말 텍스트 및 액세스 가능성 속성을 미리 구성할 수 있습니다. 지정된 모든 속성은 전환 중에 적용됩니다. 메타 모델을 사용하여 공통 속성을 필드에 적용할 수 있습니다. 양식 전체에서 반복되는 문제를 줄이는 데 도움이 될 수 있습니다.<br/><br/>
 
@@ -125,7 +125,7 @@ RSA/BouncyCastle 라이브러리에 대해 부트 위임을 구성하지 않은 
 
    1. AEM 인스턴스를 중지합니다. `[AEM installation directory]\crx-quickstart\conf\` 폴더로 이동합니다. 편집할 sling.properties 파일을 엽니다. `[AEM installation directory]\crx-quickstart\bin\start.bat` 을 사용하여 AEM 인스턴스를 시작하는 경우 `[AEM_root]\crx-quickstart\`에 있는 sling.properties를 편집합니다.
    1. sling.properties 파일에 다음 속성을 추가합니다.<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
-   1. 파일을 저장하고 닫습니다.<br/>
+   1. 파일을 저장하고 닫습니다. <br/>
    1. AEM 인스턴스를 시작합니다.<br/>
 
    <br/>
