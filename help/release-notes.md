@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: 자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
+source-git-commit: 19412c37f354fd47b661de114f286147c93c5b9e
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 80%
+source-wordcount: '404'
+ht-degree: 74%
 
 ---
 
@@ -73,6 +73,6 @@ ht-degree: 80%
 
 **자동 양식 전환 서비스 커넥터 패키지 설치**
 
-AFC-2020.03.1 릴리스에서 제공되는 최신 기능 및 개선 사항을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다. 해당 커넥터 패키지는 [AEM 패키지 공유](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)에서 다운로드할 수 있습니다.
+AFC-2020.03.1 릴리스에서 제공되는 최신 기능 및 개선 사항을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.
 
 자동 양식 전환 서비스 환경을 이미 실행 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms 추가 기능 패키지, 최신 커넥터 패키지를 차례대로 설치하십시오. 자세한 지침은 [자동 양식 전환 서비스 구성](configure-service.md) 문서를 참조하십시오.
