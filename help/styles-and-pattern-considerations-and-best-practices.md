@@ -1,15 +1,15 @@
 ---
 title: '모범 사례 및 고려 사항 '
-seo-title: '모범 사례 및 고려 사항 '
+seo-title: Best practices and considerations
 description: automated forms conversion 서비스에 대한 모범 사례 및 고려 사항
-seo-description: automated forms conversion 서비스가 식별하기 어려운 소스 PDF forms의 스타일 및 패턴 목록
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 3%
 
 ---
@@ -33,12 +33,12 @@ ht-degree: 3%
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 보안 양식을 전환하지 않습니다.
 * [PDF Portfolio](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)을 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
-* 스캔, 채우기 및 양식을 영어, 프랑스어, 독일어 및 스페인어 이외의 다른 언어로 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
+* 스캔, 채우기 및 양식을 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 이외의 다른 언어로 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 
 변환에 XDP 양식을 사용하는 경우 소스 XPD 양식을 업로드하기 전에 다음 단계를 수행하십시오.
 
 * XDP 양식을 분석하고 시각적 문제를 수정합니다. 원본 문서에서 의도한 컨트롤과 구조를 사용하는지 확인합니다. 예를 들어 소스 양식에는 단일 선택 항목에 대한 라디오 단추 대신 확인란이 있을 수 있습니다. 원하는 구성 요소를 사용하여 적응형 양식을 만들려면 라디오 단추의 확인란을 변경합니다.
-* [변환을 시작하기 ](http://www.adobe.com/go/learn_aemforms_designer_65) 전에 XDP 양식에 바인딩을 추가합니다. 소스 XDP 양식에서 바인딩을 사용할 수 있는 경우 서비스는 변환 중에 해당 적응형 양식 필드에 바인딩을 자동으로 적용합니다. 바인딩을 수동으로 적용하는 데 필요한 시간을 절약할 수 있습니다.
+* [변환을 시작하기 ](http://www.adobe.com/go/learn_aemforms_designer_65_kr) 전에 XDP 양식에 바인딩을 추가합니다. 소스 XDP 양식에서 바인딩을 사용할 수 있는 경우 서비스는 변환 중에 해당 적응형 양식 필드에 바인딩을 자동으로 적용합니다. 바인딩을 수동으로 적용하는 데 필요한 시간을 절약할 수 있습니다.
 * [XDP 파일](https://helpx.adobe.com/sign/using/text-tag.html) 에 Adobe Sign 태그를 추가합니다. 이 서비스는 자동으로 Adobe Sign 태그를 해당 적응형 양식 필드로 변환합니다. 적응형 Forms은 제한된 수의 Adobe Sign 필드를 지원합니다. 지원되는 전체 필드 목록에 대해서는 적응형 양식](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en) 설명서에서 [Adobe Sign 사용 을 참조하십시오.
 * 가능한 경우 XDP 문서의 복잡한 표를 간단한 테이블로 변환합니다. 표 셀의 양식 필드, 요철 크기의 셀, 행 또는 열 스팬 셀, 병합된 셀, 부분 테두리 또는 표시된 테두리가 없는 표는 복잡한 표로 간주됩니다. 위에 언급된 항목 중 어느 하나가 있는 테이블은 복잡한 테이블로 간주됩니다.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
@@ -77,13 +77,13 @@ AEM [!DNL Forms Automated Conversion service]은(는) 인공 지능 및 기계 �
 
 ### 선택 그룹  {#choice-group}
 
-| 패턴 | 해상도 |
+| 패턴 | 해결 |
 |--- |--- |
 | **** <br> 상자나 원이 아닌 셰이프가 있는 PatternChoice 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**** <br> 해상도선택 옵션 셰이프를 상자 또는 원으로 변경하거나 검토 및 수정 편집기를 사용하여 셰이프를 식별합니다. | ![선택 필드  ](assets/best-practice-choice-group-options.png) |
 
 ### 양식 필드 {#form-fields}
 
-| 패턴 | 해상도 |
+| 패턴 | 해결 |
 |--- |--- |
 | **** <br> PatternService는 테두리가 지워지지 않은 필드를 식별하지 않습니다. <br><br>**** <br> 해결 방법 검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![비투명 경계를 갖는 필드](assets/best-practice-fields-without-clear-borders.png) |
 | **** <br> PatternService가 양식의 하단 또는 오른쪽에 캡션이 있는 일부 선택 그룹 양식 필드를 식별하지 못할 수 있습니다. <br><br>**** <br> 해결 방법검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다 | ![선택 필드](assets/best-practice-caption-bottom-right.png) |
@@ -92,7 +92,7 @@ AEM [!DNL Forms Automated Conversion service]은(는) 인공 지능 및 기계 �
 
 ### 목록 {#lists}
 
-| 패턴 | 해상도 |
+| 패턴 | 해결 |
 |--- |--- |
 | **** <br>양식 필드가 포함된 목록이 병합되거나 해당 적응형 양식 구성 요소로 변환되지  <br><br>**** <br>않음해결 방법명확한 경계에서 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 해결하십시오. | ![선택 그룹이 포함된 목록](assets/best-practice-lists-containing-form-fields.png) |
 | **** <br>PatternService에서 식별되지 않은 몇 개의 중첩된 목록을 남겨둘 수 있습니다. ResolutionReview  <br><br>**** <br> 및 Correct Editor를 사용하여 이러한 문제를 수정할 수 있습니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |

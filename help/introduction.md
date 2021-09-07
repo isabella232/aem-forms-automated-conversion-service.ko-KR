@@ -2,9 +2,9 @@
 title: 소개
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '703'
 ht-degree: 70%
 
 ---
@@ -33,7 +33,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 이 서비스는 Adobe Sign이 활성화된 PDF forms도 지원합니다. 소스 PDF form에 Adobe Sign 텍스트 태그가 포함된 경우 서비스는 전환 중에 모든 Adobe Sign 관련 정보를 유지하고 소스 PDF의 서명자 정보를 해당 적응형 양식 필드와 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
-이 서비스는 영어, 프랑스어, 독일어 및 스페인어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
+이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
 
 ## 전환 워크플로우  {#conversion-workflow}
 
@@ -50,7 +50,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하려면 [PDF 양식을 AEM 인스턴스로 업로드](convert-existing-forms-to-adaptive-forms.md)하고 [전환을 시작](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)합니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 
 * 보안 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 암호화된 양식을 전환하지 않습니다.
-* 스캔, 컬러, 채워진 양식 및 양식을 영어, 프랑스어, 독일어 및 스페인어 이외의 다른 언어로 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
+* 스캔, 컬러, 채워진 양식 및 양식을 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 이외의 언어로 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 PDF 양식을 업로드하지 마십시오.
 * [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 문서에 설명된 제안 변경 사항을 PDF 양식에 적용하십시오.

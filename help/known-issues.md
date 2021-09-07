@@ -1,15 +1,15 @@
 ---
 title: 알려진 문제
-seo-title: 알려진 문제
+seo-title: Known Issues
 description: automated forms conversion 서비스에 대한 알려진 문제 및 제한 사항
-seo-description: AEM Forms Automated forms conversion 서비스 사용을 시작하기 전에 서비스의 알려진 문제 및 제한 사항에 대해 알아봅니다
+seo-description: Before you begin using AEM Forms Automated Forms Conversion service, learn about the known issues and limitations of the service
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ AEM Forms Automated forms conversion 서비스를 사용하기 전에 다음과 
 * 15페이지보다 큰 PDF forms은 지원되지 않습니다.
 * 암호화된 암호 보호 및 보안 문서는 변환되지 않습니다. 변환을 실행하기 전에 암호화 또는 암호를 제거합니다.
 * 여백 없는 테이블, 중첩된 표 및 자리 표시자 값이 있는 표와 같은 복잡한 표는 지원되지 않습니다. 변환 후 적응형 양식 편집기를 사용하여 복잡한 테이블을 추가하거나 수정합니다. 빈 필드, 적절한 헤더 및 명확한 경계와 함께 간단한 표만 지원됩니다.
-* 이 서비스는 영어, 프랑스어, 독일어 및 스페인어 양식만 적응형 양식으로 변환합니다. 변환된 적응형 양식을 [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 다른 언어로 번역할 수 있습니다.
+* 이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 변환합니다. 변환된 적응형 양식을 [AEM 번역 워크플로우](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 다른 언어로 번역할 수 있습니다.
 * AEM 6.4 Forms에서는 입력 양식의 다중 열 레이아웃에 대한 자동 감지를 지원하지 않습니다.
 * 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 전달되지 않습니다.
 * 소스 PDF 양식의 색상은 적응형 양식 테마에 전달되지 않습니다.

@@ -1,15 +1,15 @@
 ---
 title: 기본 메타 모델 확장
-seo-title: 기본 메타 모델 확장
+seo-title: Extend the default meta-model
 description: 기본 메타 모델을 확장하여 조직에 관련된 패턴, 유효성 검사 및 엔터티를 추가하고 Automated forms conversion 서비스를 실행하는 동안 적응형 양식 필드에 구성을 적용합니다.
-seo-description: 기본 메타 모델을 확장하여 조직에 관련된 패턴, 유효성 검사 및 엔터티를 추가하고 Automated forms conversion 서비스를 실행하는 동안 적응형 양식 필드에 구성을 적용합니다.
+seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2565'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ automated forms conversion 서비스는 소스 양식에서 양식 개체를 식
 
 ## 기본 메타 모델 {#default-meta-model}
 
-automated forms conversion 서비스에는 기본 메타 모델이 있습니다. JSON 스키마이며 Automated forms conversion 서비스의 다른 구성 요소와 함께 Adobe Cloud에 있습니다. 로컬 AEM 서버에서 메타 모델의 사본을 찾을 수 있는 위치: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json` [여기](assets/en.globalschema.json)를 클릭하여 영어 스키마에 액세스하거나 다운로드할 수도 있습니다. [프랑스어](assets/fr.globalschema.json), [독일어](assets/de.globalschema.json) 및 [스페인어](assets/es.globalschema.json) 언어용 메타 모델도 다운로드할 수 있습니다.
+automated forms conversion 서비스에는 기본 메타 모델이 있습니다. JSON 스키마이며 Automated forms conversion 서비스의 다른 구성 요소와 함께 Adobe Cloud에 있습니다. 로컬 AEM 서버에서 메타 모델의 사본을 찾을 수 있는 위치: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json` [여기](assets/en.globalschema.json)를 클릭하여 영어 스키마에 액세스하거나 다운로드할 수도 있습니다. [프랑스어](assets/fr.globalschema.json), [독일어](assets/de.globalschema.json) [스페인어](assets/es.globalschema.json), [이탈리아어](assets/it.globalschema.json) 및 [포르투갈어](assets/pt_br.globalschema.json) 언어에 대한 메타 모델도 다운로드할 수 있습니다.
 
 메타 모델의 스키마가 https://schema.org/docs/schemas.html의 스키마 엔티티에서 파생됩니다. 여기에는 개인, PostalAddress, LocalBusiness 및 https://schema.org에 정의된 더 많은 엔티티가 있습니다. 메타 모델의 모든 엔티티는 JSON 스키마 개체 유형을 준수합니다. 다음 코드는 샘플 메타 모델 구조를 나타냅니다.
 
@@ -222,8 +222,10 @@ automated forms conversion 서비스는 전환 중에 소스 양식에서 키워
 * 프랑스어(fr)
 * 독일어(de)
 * 스페인어(es)
+* 이탈리아어(it)
+* 포르투갈어(pt-br)
 
-*aem:Language* 메타 태그 태그를 메타 모델 맨 위에 추가하여 해당 언어를 지정합니다. 예,
+*aem:Language* 메타 태그 태그를 메타 모델 맨 위에 추가하여 해당 언어를 지정합니다. 예를 들어
 
 ```JSON
 "metaTags": {
