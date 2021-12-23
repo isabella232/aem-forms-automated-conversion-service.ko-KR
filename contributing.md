@@ -1,13 +1,13 @@
 ---
-source-git-commit: 2f85c45eda63751a60997d670804c34e21634359
+source-git-commit: 1cef5bea746a63d0c8f8819f919c75f5d6aa96e9
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-# Contributing to Adobe Experience Manager Cloud Service Documentation
+# AEM Forms 자동 전환 서비스 설명서에 대한 기여
 
-Adobe Experience Manager Cloud Service 설명서에 기여해 주셔서 감사합니다! Adobe는 전체 Reader 커뮤니티의 기여뿐만 아니라 동료 Adobe 직원의 콘텐츠 기여 또한 환영합니다.
+AEM Forms 자동 전환 서비스 설명서에 기여해 주셔서 감사합니다! Adobe는 전체 Reader 커뮤니티의 기여뿐만 아니라 동료 Adobe 직원의 콘텐츠 기여 또한 환영합니다.
 
 이 파일은 설명서에 기여할 수 있는 방법을 설명하고 기여할 때 따라야 할 지침을 안내합니다.
 
