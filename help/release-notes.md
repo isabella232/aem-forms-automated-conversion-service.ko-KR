@@ -2,10 +2,10 @@
 title: 새로운 기능 릴리스 정보 - 자동 양식 전환 서비스
 description: 자동 양식 전환 서비스의 최신 기능 및 버그 수정에 대한 정보
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 71%
+source-wordcount: '451'
+ht-degree: 66%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 71%
 * 특별 지침
 * 향후 변경 계획
 
-## 2021년 7월 29일 (AFC-2021.08.0) {#aug-2021}
+## 2022년 2월 24일 (AFC-2022.02.0) {#feb-2022}
+
+* 에 기능이 추가되었습니다. [섹션을 조각으로 자동 변환](convert-existing-forms-to-adaptive-forms.md) 를 사용하면 전환된 양식의 렌더링 속도를 개선하고 적응형 양식 편집기에서 큰 양식을 쉽게 로드할 수 있습니다.
+
+## 2021년 8월 29일 (AFC-2021.08.0) {#aug-2021}
 
 * 이탈리아어 및 포르투갈어 언어로 된 PDF forms을 적응형 양식으로 변환하는 기능이 추가되었습니다.
 
@@ -57,7 +61,6 @@ ht-degree: 71%
 ### 개선 사항 {#jul-2020-improvements}
 
 텍스트, 양식 및 선택 그룹 필드를 해당 적응형 양식 구성 요소로 자동 변환하는 기능이 향상되었습니다.
-
 
 ## 2020년 3월 20일(AFC-2020.03.1) {#mar-2020}
 
