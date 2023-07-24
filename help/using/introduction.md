@@ -1,11 +1,17 @@
 ---
-title: 소개
+title: 소개 automated forms conversion 서비스로
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 70%
+source-wordcount: '708'
+ht-degree: 69%
 
 ---
 

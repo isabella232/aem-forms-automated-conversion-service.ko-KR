@@ -1,13 +1,14 @@
 ---
 title: 기본 메타 모델 확장
-seo-title: Extend the default meta-model
 description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
-seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
-uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
 topic-tags: forms
-discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
 source-wordcount: '2565'
 ht-degree: 1%

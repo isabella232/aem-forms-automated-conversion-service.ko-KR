@@ -1,9 +1,14 @@
 ---
 title: 자동 양식 전환 서비스 구성
 description: automated forms conversion 서비스를 사용할 AEM 인스턴스 준비
-role: User, Admin
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer, User
+level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
 source-wordcount: '2684'
 ht-degree: 9%
@@ -106,7 +111,7 @@ Adobe이 조직에 대한 액세스를 활성화하고 관리자에게 필요한
 1. 에 로그인 [Admin Console](https://adminconsole.adobe.com/). 사용 **Adobe ID** 로그인 시 Automated forms conversion 서비스를 사용하도록 프로비저닝된 관리자의 수입니다. 로그인할 다른 ID 또는 Federated ID이 없습니다.
 1. 다음을 클릭합니다. **[!UICONTROL Automated Forms Conversion]** 옵션을 선택합니다.
 1. 클릭 **[!UICONTROL New Profile]** 다음에서 **[!UICONTROL Products]** 탭.
-1. 지정 **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, 및 **[!UICONTROL Description]** 프로필. 클릭 **[!UICONTROL Done]**. 프로필이 만들어집니다.
+1. 지정 **[!UICONTROL Name]**, **[!UICONTROL Display Name]**, 및 **[!UICONTROL Description]** 프로필. **[!UICONTROL Done]**&#x200B;를 클릭합니다. 프로필이 만들어집니다.
 
    ![새 프로필에 대한 세부 사항을 지정합니다.](assets/create-new-profile-details.png)
 
@@ -137,11 +142,11 @@ Automated forms conversion 서비스는 일별 CQ 메일 서비스를 사용하�
 * AEM 6.4 Forms 또는 AEM 6.5 Forms의 경우:
 
    1. 다음 위치에서 AEM 구성 관리자로 이동합니다. `http://localhost:4502/system/console/configMgr`
-   1. 일별 CQ 메일 서비스 구성을 엽니다. 다음에 대한 값 지정 **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, 및 **[!UICONTROL From address]** 필드. 클릭 **[!UICONTROL Save]**.
+   1. 일별 CQ 메일 서비스 구성을 엽니다. 다음에 대한 값 지정 **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, 및 **[!UICONTROL From address]** 필드. **[!UICONTROL Save]**&#x200B;를 클릭합니다.
 
       SMTP 서버의 호스트 이름 및 포트에 대한 자세한 내용은 전자 메일 서비스 공급자나 IT 관리자에게 문의하십시오. 보낸 사람 필드에서 유효한 이메일 주소를 사용할 수 있습니다. 예: notification@example.com 또는 donotreply@example.com.
 
-   1. 를 엽니다. **[!UICONTROL Day CQ Link Externalizer]** 구성. 다음에서 **[!UICONTROL Domains]** 필드에 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름 또는 IP 주소 및 포트 번호를 지정합니다. 클릭 **[!UICONTROL Save]**.
+   1. 를 엽니다. **[!UICONTROL Day CQ Link Externalizer]** 구성. 다음에서 **[!UICONTROL Domains]** 필드에 로컬, 작성자 및 게시 인스턴스에 대한 실제 호스트 이름 또는 IP 주소 및 포트 번호를 지정합니다. **[!UICONTROL Save]**&#x200B;를 클릭합니다.
 
 * AEM Forms as a Cloud Service의 경우 [지원 티켓을 로그하여 이메일 서비스 활성화](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
@@ -165,7 +170,7 @@ Automated forms conversion 서비스는 일별 CQ 메일 서비스를 사용하�
 
 1. 선택 **[!UICONTROL Automated Forms Conversion Service]** 클라우드 솔루션에서 사용할 수 있습니다.
 
-1. 다음 항목 선택 **[!UICONTROL Create new certificate]** 확인란을 선택하고 별칭을 지정합니다. 별칭은 대화 상자의 이름으로 사용됩니다. **[!UICONTROL Create certificate]**&#x200B;을 누릅니다. 대화 상자가 나타납니다. 클릭 **[!UICONTROL OK]**. 인증서가 만들어집니다.
+1. 다음 항목 선택 **[!UICONTROL Create new certificate]** 확인란을 선택하고 별칭을 지정합니다. 별칭은 대화 상자의 이름으로 사용됩니다. **[!UICONTROL Create certificate]**&#x200B;을 누릅니다. 대화 상자가 나타납니다. **[!UICONTROL OK]**&#x200B;를 클릭합니다. 인증서가 만들어집니다.
 
 1. 누르기 **[!UICONTROL Download Public Key]** 및 저장 *AEM-Adobe-IMS.crt* 컴퓨터의 인증서 파일입니다. 인증서 파일은 다음 용도로 사용됩니다. [Adobe Developer 콘솔에서 서비스 API 구성](#createintegration). **[!UICONTROL Next]**&#x200B;을 누릅니다. 
 
@@ -197,7 +202,7 @@ automated forms conversion 서비스를 사용하려면 프로젝트를 만들�
 1. **[!UICONTROL Create new project]**&#x200B;을 누릅니다. 새 프로젝트를 시작하는 화면이 나타납니다. **[!UICONTROL Add API]**&#x200B;을 누릅니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
 1. 선택 **[!UICONTROL Automated Forms Conversion service]** 및 탭 **[!UICONTROL Next]**. API 구성 화면이 나타납니다.
 1. 다음 항목 선택 [!UICONTROL Upload your public key] 옵션에서 다운로드한 AEM Adobe-user-IMS.crt 파일을 업로드합니다. [공개 인증서 받기](#obtainpubliccertificates) 섹션 및 탭 **[!UICONTROL Next]**. 새 서비스 계정(JWT) 자격 증명 만들기 옵션이 나타납니다. **[!UICONTROL Next]**&#x200B;을 누릅니다. 
-1. 제품 프로필을 선택하고 을 누릅니다. **[!UICONTROL Save configured API]**. 다음 기간 동안 생성된 프로필 선택 [조직의 개발자에 대한 액세스 권한 부여](#adduseranddevs). 선택할 프로필을 모르는 경우 관리자에게 문의하십시오.
+1. 제품 프로필 선택 및 탭 **[!UICONTROL Save configured API]**. 다음 기간 동안 생성된 프로필 선택 [조직의 개발자에 대한 액세스 권한 부여](#adduseranddevs). 선택할 프로필을 모르는 경우 관리자에게 문의하십시오.
 1. 누르기 **[!UICONTROL Service Account (JWT)]** 로컬 AEM 인스턴스를 Automated forms conversion 서비스에 연결하는 데 필요한 API 키, 클라이언트 암호 및 기타 정보를 보려면 페이지의 정보는 로컬 컴퓨터에서 IMS 구성을 만드는 데 사용됩니다.
 
 1. 로컬 인스턴스에서 IMS 구성 페이지를 엽니다. [공개 인증서 받기](#obtainpubliccertificates) 섹션의 끝에서 페이지를 열어 두었습니다.
