@@ -1,17 +1,17 @@
 ---
-title: 소개 automated forms conversion 서비스로
+title: automated forms conversion 서비스 소개
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 69%
+source-wordcount: '703'
+ht-degree: 64%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 69%
 
 ## 온보딩 {#onboarding}
 
-이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms On-Premise 기간제 고객과 Adobe 관리 서비스 기업 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스 권한을 요청할 수 있습니다. 이 서비스는 AEM Forms as a Cloud Service 고객에게도 무료로 제공되며 사전 활성화됩니다.
+이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms On-Premise 기간제 고객과 Adobe 관리 서비스 기업 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스를 요청할 수 있습니다. 이 서비스는 AEM Forms as a Cloud Service 고객에게도 무료로 제공되며 사전 활성화됩니다.
 
 Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 책임자는 해당 서비스에 연결할 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다. 자세한 내용은 [자동 양식 전환 서비스 구성](configure-service.md)을 참조하십시오.
 
@@ -51,7 +51,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 자동 양식 전환 서비스는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스](configure-service.md)를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다.
 
-### 2. PDF 양식을 적응형 양식으로 전환 {#use-the-conversion-service}
+### 2. PDF forms을 적응형 양식으로 전환 {#use-the-conversion-service}
 
 AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하려면 [PDF 양식을 AEM 인스턴스로 업로드](convert-existing-forms-to-adaptive-forms.md)하고 [전환을 시작](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)합니다. 양식을 업로드하기 전에 다음을 고려하십시오.
 

@@ -2,15 +2,15 @@
 title: 전환된 양식 검토 및 수정
 description: automated forms conversion 서비스에서 변환된 적응형 양식을 검토하고 수정합니다.
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---

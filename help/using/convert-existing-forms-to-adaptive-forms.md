@@ -1,21 +1,19 @@
 ---
-title: PDF 양식을 적응형 양식으로 전환
+title: PDF forms을 적응형 양식으로 전환
 seo-title: Convert PDF forms to adaptive forms
 description: automated forms conversion 서비스를 실행하여 PDF forms을 적응형 양식으로 변환
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
-uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
-discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 8%
+source-wordcount: '1612'
+ht-degree: 7%
 
 ---
 
-# PDF 양식을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
+# PDF forms을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
 Adobe Sensei에서 제공하는 AEM Forms Automated forms conversion 서비스는 PDF forms을 장치 친화적이고 반응형 적응형 양식으로 자동 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용 중이든, Automated forms conversion 서비스는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 다음을 참조하십시오. [Automated forms conversion](introduction.md) 서비스.
 
@@ -54,9 +52,9 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 1. AEM Forms 인스턴스에 로그인합니다.
 
 1. 누르기 **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. 탭 **[!UICONTROL Create]**> **[!UICONTROL Folder]**. 지정 **제목** 및 **이름** 폴더의 입니다. **[!UICONTROL Create]**&#x200B;을 누릅니다. 폴더가 생성됩니다.
+1. 누르기 **[!UICONTROL Create]**> **[!UICONTROL Folder]**. 지정 **제목** 및 **이름** 폴더의 입니다. **[!UICONTROL Create]**&#x200B;을 누릅니다. 폴더가 생성됩니다.
 1. 새로 만든 폴더를 열려면 탭하십시오.
-1. 탭 **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. 업로드할 양식을 선택하고 **[!UICONTROL Open]**, 및 클릭 **[!UICONTROL Upload]**. 양식이 업로드됩니다.
+1. 누르기 **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. 업로드할 양식을 선택하고 **[!UICONTROL Open]**, 및 클릭 **[!UICONTROL Upload]**. 양식이 업로드됩니다.
 
 ### 전환 실행 {#run-the-conversion}
 
